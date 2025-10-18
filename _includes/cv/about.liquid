@@ -1,0 +1,33 @@
+<div class="cv-about-header">
+  <div class="cv-about-info">
+    <h2 class="cv-name">{{ entry.name }}</h2>
+    <div class="cv-contact-details">
+      {% if entry.location %}
+        <span class="cv-contact-item">
+          <i class="fas fa-map-marker-alt"></i> {{ entry.location }}
+        </span>
+      {% endif %}
+      {% if entry.email %}
+        <span class="cv-contact-item">
+          <i class="fas fa-envelope"></i> <a href="mailto:{{ entry.email }}">{{ entry.email }}</a>
+        </span>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="cv-about-actions">
+    <button class="btn btn-primary btn-sm cv-pdf-button" data-pdf-url="{{ '/assets/pdf/KavliCV2025_Update.pdf' | relative_url }}" data-pdf-title="Matt Grayling - CV">
+      <i class="fa-solid fa-file-pdf"></i> View full CV
+    </button>
+
+    {% if entry.socials %}
+      <div class="cv-social-links">
+        {% for social in entry.socials %}
+          <a href="{{ social.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ social.icon | remove: 'fab fa-' | remove: 'fas fa-' | capitalize }}">
+            <i class="{{ social.icon }}"></i>
+          </a>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>

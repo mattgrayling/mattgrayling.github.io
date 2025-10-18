@@ -1,0 +1,8 @@
+github_users:
+  - mattgrayling
+
+repo_description_lines_max: 2
+
+github_repos:
+  # Add your public repositories here in the format: username/repo-name
+  - bayesn/bayesn

@@ -1,0 +1,99 @@
+- title: About
+  type: about
+  name: Matt Grayling
+  location: University of Cambridge, UK
+  email: matt.grayling@ast.cam.ac.uk
+  socials:
+    - url: https://github.com/mattgrayling
+      icon: "fab fa-github"
+    - url: https://www.linkedin.com/in/matt-grayling
+      icon: "fab fa-linkedin"
+    - url: https://orcid.org/0000-0002-6741-983X
+      icon: "fab fa-orcid"
+
+- title: Research Experience
+  type: time_table
+  contents:
+    - title: Research Associate in Supernovae/Data Science
+      institution: Institute of Astronomy/Kavli Institute for Cosmology, University of Cambridge
+      year: Oct 2022 - Present
+      description:
+        - Developing next-generation SED model for fitting type Ia supernova light curves, BayeSN, using latest statistical inference methods
+        - Analysing environmental-dependence of intrinsic properties of type Ia supernovae
+        - Lead of SN Ia Modelling Topical Team within the Dark Energy Science Collaboration
+
+    - title: Postdoctoral Research Associate
+      institution: Pembroke College, University of Cambridge
+      year: Oct 2024 - Present
+      description:
+        - Presenting research and supervising undergraduate students
+
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD in Astrophysics
+      institution: University of Southampton, UK
+      year: 2018 - 2022
+      description:
+        - Centre for Doctoral Training in Data-intensive Science
+        - Supervisor Prof. Mark Sullivan
+        - 'Thesis: Core-collapse Supernovae in the Dark Energy Survey'
+        - Awarded March 2023
+
+    - title: MSci Physics
+      institution: Imperial College London, UK
+      year: 2014 - 2018
+      description:
+        - Graduated with First Class Honours
+        - Supervisor Dr. Dave Clements
+        - 'Dissertation: Effect of Environment on Galaxy Properties in Intermediate Redshift Clusters'
+
+- title: Skills
+  type: nested_list
+  contents:
+    - title: Statistical Inference & Machine Learning
+      items:
+        - 'Tools: jax, numpyro, keras, tensorflow'
+        - Developing cutting-edge, GPU-accelerated hierarchical Bayesian models for fast inference across thousands of parameters
+        - Experienced with developing neural networks
+
+    - title: Supernova Astrophysics & Cosmology
+      items:
+        - Constraining effect of environment on intrinsic properties of type Ia supernovae
+        - Developing methods for supernova cosmology
+
+    - title: Leadership & Organisation
+      items:
+        - Leading Type Ia Supernova Modelling Topical Team in Dark Energy Science Collaboration
+        - Organise colloquia at Institute of Astronomy as part of colloquium committee
+
+    - title: Scientific Communication
+      items:
+        - Invited speaker at national and international conferences
+        - Several invited seminars
+        - Invited reviewer for The Astrophysical Journal
+        - Experienced with scientific writing
+
+- title: Collaborations & Leadership
+  type: nested_list
+  contents:
+    - title: Dark Energy Science Collaboration
+      items:
+        - Lead of SN Ia Modelling Topical Team, coordinating efforts to develop and compare state-of-the-art type Ia supernova models
+        - Organised July 2024 workshop in Stockholm
+        - Leading project to incorporate BayeSN within current SN cosmology pipeline for LSST
+
+    - title: Young Supernova Experiment
+      items:
+        - 4 observing nights on DECam for follow-up of YSE targets
+
+    - title: SAINTS
+      items:
+        - Founding member of newly-established international collaboration compiling and analysing the largest ever sample of type Ia supernovae observed in the near-infrared
+
+- title: Grants
+  type: list
+  contents:
+    - '<strong>£11,000 award from Kavli Institute for Cosmology, Cambridge for Cosmic Lighthouses conference</strong><br>Largest dedicated type Ia supernova conference globally since 2019, held in Cambridge in July 2025, focusing on brining together researchers from astrophysics and cosmology with ~80 attendees'
+    - '<strong>Department of Energy funding to support SN Ia Modelling Workshop</strong><br>Financial support for attendees to DESC SN Ia Modelling Workshop in Stockholm, July 2024'
+

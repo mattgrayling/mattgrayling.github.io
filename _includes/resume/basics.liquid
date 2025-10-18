@@ -1,0 +1,27 @@
+<div class="basics-content">
+  {% assign skip_basics = 'image,profiles,location' | split: ',' %}
+  {% for content in data[1] %}
+    {%
+      if (content[1] == "") or (skip_basics contains
+      content[0])
+    %}
+      {% continue %}
+    {% endif %}
+
+    <div class="basics-item mb-2">
+      {% if content[0] == 'name' %}
+        <h2 class="mb-1">{{ content[1] }}</h2>
+      {% elsif content[0] == 'label' %}
+        <p class="text-muted mb-2"><em>{{ content[1] }}</em></p>
+      {% elsif content[0] == 'summary' %}
+        <p class="mt-3">{{ content[1] }}</p>
+      {% elsif content[0] == 'url' %}
+        <p class="mb-1"><a href="{{ content[1] }}" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-globe"></i> {{ content[1] }}</a></p>
+      {% elsif content[0] == 'email' %}
+        <p class="mb-1"><a href="mailto:{{ content[1] }}" target="_blank"><i class="fa-solid fa-envelope"></i> {{ content[1] }}</a></p>
+      {% elsif content[0] == 'phone' %}
+        <p class="mb-1"><a href="tel:{{ content[1] }}"><i class="fa-solid fa-phone"></i> {{ content[1] }}</a></p>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>

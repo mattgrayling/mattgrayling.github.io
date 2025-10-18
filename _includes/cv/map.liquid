@@ -1,0 +1,23 @@
+<div class="cv-info-grid">
+  {% for content in entry.contents %}
+    <div class="cv-info-item">
+      <div class="cv-info-label">{{ content.name }}</div>
+      {% if content.value %}
+        <div class="cv-info-value">{{ content.value }}</div>
+      {% endif %}
+      {% if content.links %}
+        <div class="cv-info-value">
+          {% for item in content.links %}
+            {% if item.link %}
+              {% if item.name %}
+                <a href="{{ item.link }}" target="_blank" class="cv-link">{{ item.name }}</a>
+              {% else %}
+                <a href="{{ item.link }}" target="_blank" class="cv-link">doc</a>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>

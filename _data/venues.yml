@@ -1,0 +1,39 @@
+"AJP":
+  url: https://aapt.scitation.org/journal/ajp
+  color: "#00369f"
+
+"PhysRev":
+  url: https://journals.aps.org/
+
+"Vision":
+  color: "#009f36"
+
+"MNRAS":
+  url: https://academic.oup.com/mnras
+  color: "#8B7FB8"
+  logo: "/assets/img/journals/mnras_test.png"
+
+"ApJ":
+  url: https://iopscience.iop.org/journal/0004-637X
+  color: "#4E6FA6"
+  logo: "/assets/img/journals/apj_test.png"
+
+"ApJS":
+  url: https://iopscience.iop.org/journal/0067-0049
+  color: "#1E3A5F"
+  logo: "/assets/img/journals/apjs_test.png"
+
+"PASP":
+  url: https://iopscience.iop.org/journal/1538-3873
+  color: "#003976"
+  logo: "/assets/img/journals/pasp_test.png"
+
+"RNAAS":
+  url: https://iopscience.iop.org/journal/2515-5172
+  color: "#5A2D82"
+  logo: "/assets/img/journals/rnaas_test.png"
+
+"arXiv":
+  url: https://arxiv.org
+  color: "#B31B1B"
+  logo: "/assets/img/journals/arxiv_test.png"

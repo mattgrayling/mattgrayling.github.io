@@ -1,0 +1,43 @@
+{% comment %}
+  A new, visually appealing timeline format for news.
+  To add icons, add an `icon:` field to your news items in _data/news.yml
+  e.g.,
+  - date: 2023-11-20
+    content: Our paper on galaxy clusters was accepted to ApJ!
+    icon: fa-solid fa-newspaper
+{% endcomment %}
+
+<div class="news-timeline">
+  {% if site.news != blank %}
+    {% assign news_size = site.news | size %}
+    {% if include.limit and page.announcements.limit %}
+      {% assign news_limit = page.announcements.limit %}
+    {% else %}
+      {% assign news_limit = news_size %}
+    {% endif %}
+    {% assign news = site.news | reverse %}
+
+    <ul>
+      {% for item in news limit: news_limit %}
+        <li class="timeline-item">
+          <div class="timeline-point"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">{{ item.date | date: '%b %d, %Y' }}</div>
+            <div class="timeline-text">
+              {% if item.icon %}
+                <i class="{{ item.icon }} fa-fw mr-2"></i>
+              {% endif %}
+              {% if item.inline %}
+                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+              {% else %}
+                <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+              {% endif %}
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No news so far...</p>
+  {% endif %}
+</div>

@@ -1,0 +1,1705 @@
+/*******************************************************************************
+ * Custom Enhancements
+ ******************************************************************************/
+
+// Wider container for better screen utilization
+.container {
+  max-width: 1200px !important;
+}
+
+// Fix profile contact info font to match rest of site
+.profile .more-info {
+  font-family: inherit;
+}
+
+// Make navbar social icons smaller
+.navbar .social {
+  font-size: 0.9rem;
+
+  a {
+    margin: 0 0.25rem;
+  }
+}
+
+// Journal logo styling for publications
+.journal-logo {
+  max-height: 100px;
+  width: 100%;
+  object-fit: contain;
+  padding: 0.5rem;
+  background-color: var(--global-bg-color);
+  border: 1px solid var(--global-divider-color);
+
+  &:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+  }
+}
+
+.journal-logo-link {
+  display: block;
+  text-decoration: none;
+}
+
+// Card hover effects for better interactivity
+.card {
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+
+    i {
+      font-size: 1.1rem;
+      margin-right: 0.5rem;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover i {
+      transform: scale(1.1);
+    }
+  }
+}
+
+// Project cards specific styling
+.project-card {
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+
+    .project-img {
+      transform: scale(1.05);
+    }
+  }
+
+  .project-img {
+    transition: transform 0.4s ease-in-out;
+  }
+}
+
+// Smooth link hover effects
+a:not(.btn):not(.badge):not(.nav-link) {
+  transition: color 0.2s ease-in-out;
+  position: relative;
+
+  &:hover {
+    text-decoration-thickness: 2px;
+  }
+}
+
+// Animated underline for main content links
+.card-body a:not(.btn):not(.badge),
+.post-content a:not(.btn):not(.badge),
+.cv a:not(.btn):not(.badge) {
+  position: relative;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s ease-in-out;
+
+  &:hover {
+    background-size: 100% 2px;
+  }
+}
+
+// Timeline component for chronological information
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  border-left: 2px solid var(--global-divider-color);
+  margin: 2rem 0;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -2.55rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--global-theme-color);
+  border-radius: 50%;
+  border: 2px solid var(--global-bg-color);
+}
+
+.timeline-content {
+  h5 {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  .text-muted {
+    font-size: 0.9rem;
+  }
+}
+
+// CV-specific timeline colors
+.cv {
+  .timeline {
+    border-left-color: var(--cv-card-border);
+  }
+
+  .timeline-dot {
+    background-color: var(--cv-accent-light);
+    border-color: var(--cv-card-background);
+    box-shadow: 0 0 8px rgba(var(--cv-accent-light-rgb), 0.4);
+  }
+
+  .timeline-content {
+    h5 {
+      color: var(--cv-accent-light);
+    }
+
+    .text-muted {
+      color: var(--cv-secondary-text) !important;
+    }
+
+    .badge-primary {
+      background-color: rgba(var(--cv-accent-light-rgb), 0.15) !important;
+      color: var(--cv-accent-light) !important;
+      border: 1px solid rgba(var(--cv-accent-light-rgb), 0.3);
+    }
+
+    .items, .subitems {
+      color: var(--cv-secondary-text);
+
+      li {
+        color: var(--cv-secondary-text);
+      }
+
+      .item, .subitem {
+        color: var(--cv-secondary-text);
+      }
+    }
+  }
+}
+
+// Accordion enhancements
+.accordion-item {
+  border: none !important;
+  background-color: transparent !important;
+  margin-bottom: 0.5rem;
+}
+
+.accordion-button {
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0.875rem 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 0.25rem !important;
+  background-color: rgba(255, 255, 255, 0.03) !important;
+  color: var(--global-text-color) !important;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    border-color: var(--global-theme-color) !important;
+    background-color: rgba(var(--global-theme-color), 0.1) !important;
+    transform: translateX(5px);
+  }
+
+  &:not(.collapsed) {
+    background-color: rgba(var(--global-theme-color), 0.15) !important;
+    border-color: var(--global-theme-color) !important;
+    font-weight: 500;
+  }
+
+  i {
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+// Key Contributions callout boxes
+.callout-box {
+  background-color: rgba(var(--global-theme-color), 0.05);
+  border-left: 4px solid var(--global-theme-color);
+  border-radius: 0.25rem;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  h5, h6 {
+    color: var(--global-theme-color);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+
+    i {
+      margin-right: 0.5rem;
+    }
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  &.callout-info {
+    background-color: rgba(23, 162, 184, 0.05);
+    border-left-color: #17a2b8;
+
+    h5, h6 {
+      color: #17a2b8;
+    }
+  }
+
+  &.callout-warning {
+    background-color: rgba(255, 193, 7, 0.05);
+    border-left-color: #ffc107;
+
+    h5, h6 {
+      color: #c79100;
+    }
+  }
+}
+
+// Icon utilities
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+// Better spacing for sections
+.section-spacing {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+// Enhanced card with image layout
+.card-horizontal {
+  .row {
+    align-items: center;
+  }
+
+  img {
+    object-fit: cover;
+    height: 100%;
+    min-height: 200px;
+  }
+}
+
+// Tabs styling improvements
+.nav-tabs {
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid var(--global-divider-color);
+
+  .nav-link {
+    border: none;
+    color: var(--global-text-color);
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+
+    &.active {
+      color: var(--global-theme-color);
+      border-bottom: 2px solid var(--global-theme-color);
+      background-color: transparent;
+    }
+
+    &:hover {
+      border-color: transparent;
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+// List styling improvements
+ul.icon-list {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 1.5rem;
+
+  li {
+    padding: 0.5rem 0;
+    padding-left: 1.75rem;
+    position: relative;
+
+    i {
+      position: absolute;
+      left: 0;
+      top: 0.65rem;
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+// Styled bullet points for service page
+.accordion-body ul {
+  list-style-type: disc;
+
+  li::marker {
+    color: var(--global-theme-color);
+  }
+}
+
+// Mobile-optimized timeline
+@media (max-width: 767.98px) {
+  .timeline {
+    padding-left: 1.5rem;
+    border-left-width: 2px;
+  }
+
+  .timeline-item {
+    margin-bottom: 1.5rem;
+  }
+
+  .timeline-dot {
+    left: -1.9rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .timeline-content {
+    .card {
+      // Remove excessive padding on mobile
+      .card-body {
+        padding: 1rem;
+      }
+
+      // Ensure badges don't break layout
+      .badge {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+      }
+    }
+
+    h5 {
+      font-size: 1rem;
+    }
+
+    h6 {
+      font-size: 0.85rem;
+    }
+
+    .btn-sm {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.5rem;
+    }
+  }
+}
+
+// Smooth scrolling for better UX
+html {
+  scroll-behavior: smooth;
+}
+
+// Badge hover effects
+.badge {
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+// Realistic star field background - covers entire page
+#star-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(5, 5, 15);  // Very dark, nearly black (like night sky)
+  z-index: -1;  // Behind all content
+}
+
+// Supernova explosion animation
+@keyframes supernova {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.3);
+  }
+  15% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(2);
+  }
+}
+
+.supernova {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  box-shadow: 0 0 6px 2px rgba(255, 255, 255, 1),
+              0 0 12px 4px rgba(255, 255, 255, 0.8);
+  pointer-events: none;
+  animation: supernova 2.5s ease-out forwards;
+  z-index: 10;
+}
+
+// Related content modules
+.related-content {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--global-divider-color);
+
+  h4 {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--global-text-color);
+
+    i {
+      color: var(--global-theme-color);
+      margin-right: 0.5rem;
+    }
+  }
+
+  .related-card {
+    height: 100%;
+    border: 1px solid var(--global-divider-color);
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    color: var(--global-text-color);
+    display: block;
+
+    &:hover {
+      border-color: var(--global-theme-color);
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-decoration: none;
+      color: var(--global-text-color);
+    }
+
+    .card-body {
+      padding: 1.25rem;
+
+      i {
+        color: var(--global-theme-color);
+        margin-right: 0.5rem;
+        font-size: 1.1rem;
+      }
+
+      strong {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: var(--global-theme-color);
+      }
+
+      p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: var(--global-text-color-light);
+      }
+    }
+  }
+}
+
+// Custom spiral galaxy cursor - disabled for now
+// body {
+//   cursor: url('/assets/img/galaxy_cursor.png') 16 16, auto;
+// }
+
+// // Fallback for links and interactive elements
+// a, button, .btn {
+//   cursor: url('/assets/img/galaxy_cursor.png') 16 16, pointer;
+// }
+
+// ADS Publications button hover effect
+.ads-button {
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    background-color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+    color: white !important;
+
+    i {
+      transform: scale(1.1);
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+}
+
+// Coming soon repository card styling - match GitHub readme stats appearance
+.repo-card-coming-soon {
+  // Style properties (background, border, etc.)
+  background: #161b22; // CHANGED: Was #0d1117. Matches GitHub card bg.
+  border: 1px solid #484f58; // CHANGED: Brighter border to match reference card
+  border-radius: 6px; // Standard GitHub corner radius
+  padding: 16px; // Add consistent internal padding
+  box-sizing: border-box; // Ensures padding is included in the height/width
+
+  // Sizing and Layout properties
+  width: 400px;
+  min-width: 400px;
+  // REMOVED: Fixed height - let content dictate spacing naturally
+
+  // Flexbox for vertical layout
+  display: flex; // ADDED: Enables flexbox layout.
+  flex-direction: column; // ADDED: Stacks children vertically.
+  // REMOVED: justify-content: space-between - using margins instead for accurate spacing
+
+  // Text properties
+  text-align: left;
+  color: #8b949e; // CHANGED: Was #c9d1d9. Using a more subtle grey for secondary text.
+
+  .repo-card-header {
+    display: flex;
+    align-items: center;
+    gap: 8px; // Add space between items
+    margin-bottom: 0; // Remove margin, let flexbox handle spacing
+
+    .repo-name {
+      font-size: 16px; // Standard size for repo name
+      font-weight: 600; // Use 600 for semi-bold, matching GitHub
+      color: #e6edf3; // White to match bayesn/bayesn card
+      text-decoration: none;
+    }
+
+    svg {
+      color: #3fb950; // CHANGED: GitHub green for icons
+      flex-shrink: 0; // Prevent icon from shrinking
+    }
+  }
+
+  .repo-description {
+    font-size: 14px; // CHANGED: Was 12px. Standardize the font size
+    color: #8b949e;
+    font-weight: 400; // ADDED: Normal weight to match reference card
+    margin-top: 8px; // Add some space below the header
+    margin-bottom: 16px; // CHANGED: Add spacing above stats line
+    line-height: 1.5;
+  }
+
+  .repo-stats {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 12px;
+    color: #8b949e;
+    margin-top: auto; // ADDED: Flexible bottom alignment
+
+    .repo-stat {
+      display: flex;
+      align-items: center;
+      gap: 4px; // Space between icon and text
+    }
+
+    .language-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      display: inline-block;
+      background-color: #3178c6; // ADDED: Python blue for language dot
+    }
+
+    svg {
+      color: #3fb950; // CHANGED: GitHub green for icons
+      flex-shrink: 0; // Prevent icons from shrinking
+    }
+  }
+}
+
+// Style the "Coming Soon" badge
+.coming-soon-badge {
+  display: inline-block;
+  background-color: #dbab09; // A muted yellow/gold
+  color: #161b22; // Dark text for contrast
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  border-radius: 2em; // Pill shape
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+// Light theme override
+html[data-theme="light"] .repo-card-coming-soon {
+  background: #ffffff;
+  border-color: #d0d7de;
+  color: #24292f;
+
+  .repo-card-header {
+    color: #0969da;
+
+    svg {
+      color: #57606a;
+    }
+  }
+
+  .repo-description {
+    color: #57606a;
+  }
+
+  .repo-stats {
+    color: #57606a;
+
+    svg {
+      color: #57606a;
+    }
+  }
+}
+
+/*******************************************************************************
+ * CV Page Enhancements - Glassmorphism Cards
+ ******************************************************************************/
+
+// CV-specific color variables
+.cv {
+  --cv-card-background: rgba(22, 27, 34, 0.65);
+  --cv-card-border: rgba(139, 148, 158, 0.3);
+  --cv-primary-text: #e6edf3;
+  --cv-secondary-text: #8b949e;
+  --cv-accent-light: #7eb3b0;
+  --cv-accent-light-rgb: 126, 179, 176;
+  --cv-separator-color: #3a3a3a;
+}
+
+// Glassmorphism cards for CV page
+.cv .card {
+  background-color: var(--cv-card-background);
+  border: 1px solid var(--cv-card-border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.cv .card-body {
+  padding: 2rem;
+}
+
+.cv .card-title {
+  color: var(--cv-primary-text);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.cv hr {
+  border-top: 1px solid var(--cv-card-border);
+}
+
+/*******************************************************************************
+ * CV Page - Scrollspy Sidebar Navigation
+ ******************************************************************************/
+
+.cv-sidebar {
+  padding: 1.5rem 1rem;
+  background-color: var(--cv-card-background);
+  border: 1px solid var(--cv-card-border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  top: 80px;
+
+  .nav-link {
+    color: var(--cv-secondary-text);
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.25rem;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+    font-size: 0.9rem;
+    border-left: 3px solid transparent;
+
+    &:hover {
+      color: var(--cv-primary-text);
+      background-color: rgba(255, 255, 255, 0.05);
+      transform: translateX(3px);
+    }
+
+    &.active {
+      color: var(--cv-accent-light);
+      background-color: rgba(94, 234, 212, 0.1);
+      border-left-color: var(--cv-accent-light);
+      font-weight: 500;
+    }
+  }
+}
+
+// Smooth scroll padding to account for fixed header
+.cv-section {
+  scroll-margin-top: 80px;
+}
+
+// Add bottom padding to CV container so last section can be scrolled into view
+// Only apply this on the actual CV page (which has the sidebar), not the About page
+.cv:has(+ .cv-sidebar),
+.container:has(.cv-sidebar) .cv {
+  padding-bottom: 50vh;
+}
+
+// Mobile responsiveness for sidebar
+@media (max-width: 767.98px) {
+  .cv-sidebar {
+    position: relative !important;
+    top: 0;
+    max-height: none;
+    margin-bottom: 2rem;
+
+    .nav {
+      flex-direction: row !important;
+      flex-wrap: wrap;
+    }
+
+    .nav-link {
+      font-size: 0.8rem;
+      padding: 0.4rem 0.8rem;
+    }
+  }
+}
+
+/*******************************************************************************
+ * CV About Header - Compact Contact Information with Icons
+ ******************************************************************************/
+
+.cv-about-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.cv-name {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--cv-primary-text);
+  margin: 0 0 0.5rem 0;
+}
+
+.cv-contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  color: var(--cv-secondary-text);
+  font-size: 0.95rem;
+}
+
+.cv-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  a {
+    color: var(--cv-secondary-text);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--cv-accent-light);
+      text-decoration: underline;
+    }
+  }
+}
+
+.cv-about-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.cv-social-links {
+  display: flex;
+  gap: 1.25rem;
+
+  a {
+    color: var(--cv-secondary-text);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+
+    i {
+      font-size: 1.75rem;
+    }
+
+    &:hover {
+      color: var(--cv-accent-light);
+    }
+  }
+}
+
+.cv-pdf-button {
+  white-space: nowrap;
+}
+
+// Responsive adjustments
+@media (max-width: 767.98px) {
+  .cv-about-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .cv-name {
+    font-size: 1.75rem;
+  }
+
+  .cv-social-links {
+    padding-top: 0.5rem;
+  }
+}
+
+// Reduce top padding on CV page
+.cv-pdf-section {
+  margin-top: 0 !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.cv-section .card {
+  margin-top: 1.5rem !important;
+
+  &:first-of-type {
+    margin-top: 0 !important;
+  }
+}
+
+// Also ensure CV sections have spacing
+.cv-section {
+  margin-bottom: 1.5rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+// Reduce top spacing on CV page specifically
+.cv-pdf-section {
+  padding-top: 0 !important;
+}
+
+// Target the page wrapper
+.page-content {
+  padding-top: 1rem !important;
+}
+
+// Override default post spacing
+.post {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/*******************************************************************************
+ * CV List Items - Enhanced Visual Design
+ ******************************************************************************/
+
+// Turn nested lists into responsive grid layout
+.cv-section .card-text.list-group:has(.subitems) {
+  display: grid;
+  // Use auto-fill instead of auto-fit, and set max width to prevent stretching
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+  padding-left: 0;
+
+  // For sections with 3 or fewer items, limit max width
+  &:has(li:nth-last-child(-n+3):first-child) {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 400px));
+  }
+}
+
+// Enhanced styling for list-group items within CV sections
+.cv-section .list-group-item {
+  // Default styling for items without nested lists
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(139, 148, 158, 0.2);
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+
+  &:last-of-type {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  &:first-of-type {
+    padding-top: 0.5rem;
+  }
+
+  // Override styling for items with nested lists (micro-cards)
+  &:has(.subitems) {
+    background-color: rgba(139, 148, 158, 0.05);
+    border: 1px solid rgba(139, 148, 158, 0.15);
+    border-radius: 8px;
+    padding: 1.25rem;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: rgba(139, 148, 158, 0.08);
+      border-color: rgba(var(--cv-accent-light-rgb), 0.3);
+      transform: translateY(-2px);
+    }
+  }
+
+  // Style headings as category labels for nested lists
+  h5 {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--cv-primary-text);
+    margin-bottom: 0.75rem;
+  }
+
+  // Special styling for h5 in nested lists
+  &:has(.subitems) h5 {
+    color: var(--cv-accent-light);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 1rem;
+  }
+}
+
+// Styling for the nested sub-list (the bullet points)
+.subitems {
+  list-style: none;
+  padding-left: 1.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  position: relative;
+
+  // Vertical connecting line for visual interest
+  &::before {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    width: 2px;
+    background-color: rgba(var(--cv-accent-light-rgb), 0.2);
+    border-radius: 2px;
+  }
+
+  li {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 0.75rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    // The custom bullet point
+    &::before {
+      content: '';
+      position: absolute;
+      left: -0.25rem;
+      top: 0.6em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--cv-accent-light);
+      box-shadow: 0 0 6px rgba(var(--cv-accent-light-rgb), 0.35);
+      z-index: 1;
+    }
+  }
+}
+
+// Style the text of the subitem
+.subitem {
+  color: var(--cv-secondary-text); // Use secondary color for de-emphasis
+  line-height: 1.6;
+}
+
+// Simple list items (for non-nested lists like Grants)
+.cv-section .list-group .list-group-item:not(:has(h5)) {
+  color: var(--cv-secondary-text);
+  line-height: 1.5;
+  position: relative;
+  padding-left: 1.5rem;
+  padding-top: 0.35rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 0; // No divider for simple lists
+  margin-bottom: 0;
+
+  &:first-of-type {
+    padding-top: 0.5rem;
+  }
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+
+  // Style bold text in simple lists to match CV colors
+  strong {
+    color: var(--cv-accent-light);
+    font-weight: 600;
+  }
+
+  // Custom bullet for simple list items
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 1em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--cv-accent-light);
+    box-shadow: 0 0 6px rgba(var(--cv-accent-light-rgb), 0.3);
+  }
+}
+
+/*******************************************************************************
+ * Collaborations Page - Consistent Color Scheme
+ ******************************************************************************/
+
+// Fix card title link colors to use muted teal accent
+.cv .card-title a {
+  color: var(--cv-accent-light);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  font-family: inherit; // Use body font instead of heading font
+
+  &:hover {
+    color: var(--cv-accent-light);
+    text-decoration: underline;
+  }
+}
+
+// Ensure card titles on collaborations page use body font
+.cv .row .card .card-title {
+  font-family: inherit; // Use body font instead of heading font
+}
+
+// Style role subtitles with consistent colors
+.cv .card p.text-muted.small {
+  color: var(--cv-secondary-text);
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+// Ensure collaboration description text uses secondary color
+.cv .card p:not(.text-muted):not(.lead) {
+  color: var(--cv-secondary-text);
+}
+
+// Add subtle hover effect to collaboration cards
+.cv .row .card:hover {
+  border-color: rgba(139, 148, 158, 0.5);
+  transform: translateY(-3px);
+}
+
+/*******************************************************************************
+ * Research Page - Glassmorphism Card Styling
+ ******************************************************************************/
+
+// Reusable glass card component
+.glass-card {
+  background: rgba(22, 27, 34, 0.65);
+  border: 1px solid rgba(139, 148, 158, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: #8b949e; // Secondary text color
+
+  p {
+    color: #8b949e;
+    line-height: 1.6;
+  }
+
+  // Style headings inside glass cards
+  h5 {
+    color: #e6edf3;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  // Custom list styling
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+
+    li {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 0.75rem;
+      color: #8b949e;
+
+      strong {
+        color: #e6edf3;
+      }
+
+      // Add custom accent-colored bullet
+      &::before {
+        content: '\f111'; // fa-circle icon
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 8px;
+        color: #7eb3b0; // Accent color
+        position: absolute;
+        left: 8px;
+        top: 9px;
+      }
+    }
+  }
+
+  // Style links
+  a {
+    color: #7eb3b0;
+
+    &:hover {
+      color: #7eb3b0;
+    }
+  }
+}
+
+// Upgrade the Key Impact callout box to match glass card aesthetic
+.callout-box {
+  // Override previous styles with glass card aesthetic
+  background: rgba(22, 27, 34, 0.65);
+  border: 1px solid rgba(139, 148, 158, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-left: 5px solid #7eb3b0; // Accent border
+  margin-top: 0;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  h5, h6 {
+    color: #7eb3b0;
+    margin-top: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  p {
+    margin-bottom: 0;
+    color: #8b949e; // Changed from #e6edf3 to match other cards
+    line-height: 1.6;
+  }
+
+  strong {
+    color: #e6edf3; // Maintain emphasis pattern
+    font-weight: 600;
+  }
+}
+
+// Section heading styling
+.section-heading {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+  color: #8b949e;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/*******************************************************************************
+ * About Page - Card Alignment and Location Styling
+ ******************************************************************************/
+
+/* --- Part 1: Fix Card Edge Alignment --- */
+
+// Target the SPECIFIC row that follows the first intro card.
+// This ensures we don't affect the "Research Focus" card or other content.
+.cv > .card:first-of-type + .row {
+  // 1. Override Bootstrap's default negative margins.
+  // This brings the row's true edges back in line with the parent container.
+  margin-left: 0;
+  margin-right: 0;
+
+  // 2. Target the columns ONLY within this specific row.
+  > [class*='col-'] {
+    // 3. Keep the INNER gutter for spacing between cards...
+    // The first column keeps its right padding, the last column keeps its left padding.
+    // Bootstrap default is 15px, so we use 7.5px on each side.
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
+
+  // 4. ...but REMOVE the OUTER padding to achieve perfect edge alignment.
+  > [class*='col-']:first-child {
+    padding-left: 0;
+  }
+
+  > [class*='col-']:last-child {
+    padding-right: 0;
+  }
+
+  // 5. Create a Block Formatting Context to contain the floated profile.
+  // This forces the row height to account for the floated element.
+  overflow: hidden;
+
+  // 6. Add padding to prevent hover effect from clipping top border
+  padding-top: 5px;
+}
+
+/* --- Part 2: Fix Vertical Pill Alignment --- */
+
+// Make the floated profile container a flexbox column
+.profile.float-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; // Distribute space to push pill to bottom
+  height: 100%; // Allow it to fill the height of its container
+
+  figure {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+}
+
+// Glassmorphism location pill below profile picture
+.profile.float-right .more-info {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 18px;
+  margin-top: 1rem; // Add some spacing from image
+  margin-bottom: 0;
+  align-self: center; // Center horizontally
+
+  // Glassmorphism effect matching CV cards
+  background: rgba(22, 27, 34, 0.65);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(139, 148, 158, 0.3);
+  border-radius: 9999px; // Pill shape
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  // Typography
+  color: #8b949e; // Secondary text color
+  font-size: 0.875rem; // 14px
+  text-align: center;
+  line-height: 1.5;
+  white-space: nowrap;
+
+  // Style the paragraph tags inside
+  p {
+    margin: 0;
+    color: #8b949e;
+    font-size: 0.875rem;
+    display: inline;
+
+    br {
+      content: ' ';
+
+      &::after {
+        content: ', ';
+      }
+
+      &:last-of-type::after {
+        content: '';
+      }
+    }
+  }
+
+}
+
+/* --- Part 3: Fix spacing issues --- */
+
+// Reduce excessive spacing after CV cards and before news section
+.cv {
+  margin-bottom: 1.5rem; // Control spacing after last card
+
+  // Ensure last card doesn't have excessive bottom margin
+  > .card:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Reduce top margin on news section heading when it follows CV content
+.clearfix + h2 {
+  margin-top: 2rem !important;
+}
+
+/*******************************************************************************
+ * Project Pages - Plot Card Styling
+ ******************************************************************************/
+
+/* Base styling for all plot cards */
+.plot-card {
+  background: rgba(22, 27, 34, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  // Add accent border to tie into design system
+  border-top: 3px solid #7eb3b0;
+
+  img {
+    display: block;
+    width: 100%;
+    // Soften corners and add subtle shadow for better integration
+    border-radius: 6px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  figcaption {
+    color: #8b949e; // Secondary text color
+    font-size: 0.875rem;
+    line-height: 1.5;
+
+    strong {
+      color: #e6edf3; // Primary text color
+      font-weight: 500;
+    }
+  }
+}
+
+/* Featured "hero" plot styling */
+.plot-card-featured {
+  // Float to the right and allow text to wrap
+  float: right;
+  max-width: 55%;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+
+  // Create "matting" effect with padding
+  padding: 1.5rem;
+
+  // Responsive: stack on smaller screens
+  @media (max-width: 991px) {
+    float: none;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Smaller secondary plots */
+.plot-card-smaller {
+  float: right;
+  max-width: 40%;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+
+  // Create "matting" effect with padding
+  padding: 1.25rem;
+
+  // Responsive: stack on smaller screens
+  @media (max-width: 991px) {
+    float: none;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Smaller in-column plots */
+.row .plot-card {
+  padding: 1rem; // Less padding for smaller cards
+  border-top-width: 2px; // Thinner border for smaller cards
+}
+
+/* Plot card for grid layouts - Strategy 3: Modular Card Grid */
+.plot-card-grid {
+  background: rgba(22, 27, 34, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-top: 3px solid #7eb3b0;
+  padding: 1.5rem;
+  height: 100%;
+
+  img {
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  figcaption {
+    color: #8b949e;
+    font-size: 0.875rem;
+    line-height: 1.5;
+
+    strong {
+      color: #e6edf3;
+      font-weight: 500;
+    }
+  }
+}
+
+/* Individual finding cards - modular highlight style */
+.finding-card {
+  background: rgba(22, 27, 34, 0.65);
+  border: 1px solid rgba(139, 148, 158, 0.2);
+  border-left: 3px solid #7eb3b0;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+
+  h6 {
+    color: #e6edf3;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+
+    i {
+      color: #7eb3b0;
+      margin-right: 0.5rem;
+      font-size: 0.85rem;
+    }
+  }
+
+  p {
+    color: #8b949e;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+
+    strong {
+      color: #e6edf3;
+      font-weight: 600;
+    }
+  }
+
+  &:hover {
+    border-color: rgba(126, 179, 176, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  }
+}
+
+// Responsive: stack on mobile
+@media (max-width: 991px) {
+  .plot-card-grid {
+    margin-bottom: 2rem;
+  }
+}
+
+/*******************************************************************************
+ * Project Pages - Page Header Styling (No Card)
+ ******************************************************************************/
+
+// Style the default Jekyll page header without a card background
+.post-header {
+  margin-bottom: 2.5rem;
+
+  .post-title {
+    color: #e6edf3; // Primary text color for maximum importance
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+
+  .post-description {
+    color: #8b949e; // Secondary text color
+    font-size: 1.1rem;
+    margin-bottom: 0;
+  }
+}
+
+/*******************************************************************************
+ * Project Pages - Intro Card (Approach 1: Abstract Glass Card)
+ ******************************************************************************/
+
+.intro-card {
+  background: rgba(22, 27, 34, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  margin-top: 0; // Removed extra top margin since header card now provides spacing
+  margin-bottom: 3rem; // Add space above the plot/findings section
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    color: #7eb3b0; // Use accent color for the heading
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); // Subtle separator
+  }
+
+  p {
+    color: #8b949e; // Secondary text for readability
+    line-height: 1.7;
+    font-size: 1rem;
+
+    strong {
+      color: #e6edf3; // Make bold text pop
+      font-weight: 600;
+    }
+  }
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+/*******************************************************************************
+ * Project Pages - Collaborators and Publications Cards
+ ******************************************************************************/
+
+.project-info-card {
+  background: rgba(22, 27, 34, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem 1.5rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  h5 {
+    color: #7eb3b0; // Accent color
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    i {
+      margin-right: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+// Collaborators list styling
+.collaborator-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.collaborator-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  strong {
+    color: #e6edf3; // Primary text
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  span {
+    color: #8b949e; // Secondary text
+    font-size: 0.875rem;
+  }
+}
+
+// Publications list styling
+.publication-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.publication-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+  strong {
+    color: #e6edf3; // Primary text
+    font-weight: 600;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  span {
+    color: #8b949e; // Secondary text
+    font-size: 0.85rem;
+  }
+
+  .pub-link {
+    color: #7eb3b0; // Accent color for links
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #9ec9c7;
+      text-decoration: underline;
+    }
+  }
+}
+
+/*******************************************************************************
+ * Project Pages - Equal Height Cards for Publications and Collaborators
+ ******************************************************************************/
+
+/* Target the row containing the publications and collaborators */
+.row.mt-5 {
+  /* This ensures the columns themselves are treated as stretchable items */
+  align-items: stretch;
+}
+
+/* Make the direct children of the columns fill the available height */
+.row.mt-5 > .col-lg-8 > .cv,
+.row.mt-5 > .col-lg-4 > .project-info-card {
+  height: 100%;
+  display: flex; /* Make the card a flex container */
+  flex-direction: column; /* Stack its children vertically */
+}
+
+/* Ensure the inner card in the .cv wrapper also fills its container */
+.cv .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Optional: Make the publications list grow to fill remaining space */
+.cv .card .publications {
+  flex-grow: 1;
+}
+
+/* Optional: Make the collaborators list grow to fill remaining space */
+.project-info-card .collaborator-list {
+  flex-grow: 1;
+}
+
+/*******************************************************************************
+ * Project Pages - Accent Section Heading Utility Class
+ ******************************************************************************/
+
+.accent-section-heading {
+  color: #7eb3b0;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+/*******************************************************************************
+ * Consistency Fixes
+ ******************************************************************************/
+
+// Force all icons within themed card titles to use the primary accent color.
+// This overrides utility classes like .text-primary for a consistent look.
+.cv .card .card-title i {
+  color: var(--cv-accent-light) !important;
+}

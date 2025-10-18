@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg2)"/>
+
+  <!-- Plot area -->
+  <rect x="80" y="40" width="660" height="400" fill="white" stroke="#dee2e6" stroke-width="2"/>
+
+  <!-- Grid lines -->
+  <g stroke="#e9ecef" stroke-width="1">
+    <line x1="80" y1="140" x2="740" y2="140"/>
+    <line x1="80" y1="240" x2="740" y2="240"/>
+    <line x1="80" y1="340" x2="740" y2="340"/>
+    <line x1="233" y1="40" x2="233" y2="440"/>
+    <line x1="387" y1="40" x2="387" y2="440"/>
+    <line x1="540" y1="40" x2="540" y2="440"/>
+  </g>
+
+  <!-- Light curve 1 (Image A) -->
+  <path d="M 120 380 L 150 360 L 180 310 L 210 230 L 240 180 L 270 160 L 300 170 L 330 200 L 360 250 L 390 300 L 420 340"
+        stroke="#4a7ba7" stroke-width="3" fill="none"/>
+  <g fill="#4a7ba7">
+    <circle cx="120" cy="380" r="4"/>
+    <circle cx="150" cy="360" r="4"/>
+    <circle cx="180" cy="310" r="4"/>
+    <circle cx="210" cy="230" r="4"/>
+    <circle cx="240" cy="180" r="4"/>
+    <circle cx="270" cy="160" r="4"/>
+    <circle cx="300" cy="170" r="4"/>
+    <circle cx="330" cy="200" r="4"/>
+    <circle cx="360" cy="250" r="4"/>
+    <circle cx="390" cy="300" r="4"/>
+    <circle cx="420" cy="340" r="4"/>
+  </g>
+
+  <!-- Light curve 2 (Image B - delayed) -->
+  <path d="M 380 380 L 410 360 L 440 310 L 470 230 L 500 180 L 530 160 L 560 170 L 590 200 L 620 250 L 650 300 L 680 340"
+        stroke="#d1916b" stroke-width="3" fill="none"/>
+  <g fill="#d1916b">
+    <circle cx="380" cy="380" r="4"/>
+    <circle cx="410" cy="360" r="4"/>
+    <circle cx="440" cy="310" r="4"/>
+    <circle cx="470" cy="230" r="4"/>
+    <circle cx="500" cy="180" r="4"/>
+    <circle cx="530" cy="160" r="4"/>
+    <circle cx="560" cy="170" r="4"/>
+    <circle cx="590" cy="200" r="4"/>
+    <circle cx="620" cy="250" r="4"/>
+    <circle cx="650" cy="300" r="4"/>
+    <circle cx="680" cy="340" r="4"/>
+  </g>
+
+  <!-- Time delay annotation -->
+  <line x1="240" y1="420" x2="500" y2="420" stroke="#212529" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="370" y="460" font-family="Arial, sans-serif" font-size="14" fill="#212529" text-anchor="middle" font-weight="bold">ΔT ~ 122 days</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#212529"/>
+    </marker>
+  </defs>
+
+  <!-- Axes -->
+  <line x1="80" y1="440" x2="740" y2="440" stroke="#212529" stroke-width="2"/>
+  <line x1="80" y1="40" x2="80" y2="440" stroke="#212529" stroke-width="2"/>
+
+  <!-- Axis labels -->
+  <text x="410" y="490" font-family="Arial, sans-serif" font-size="16" fill="#212529" text-anchor="middle">Time (days)</text>
+  <text x="30" y="240" font-family="Arial, sans-serif" font-size="16" fill="#212529" text-anchor="middle" transform="rotate(-90 30 240)">Flux</text>
+
+  <!-- Legend -->
+  <line x1="580" y1="70" x2="610" y2="70" stroke="#4a7ba7" stroke-width="3"/>
+  <text x="620" y="75" font-family="Arial, sans-serif" font-size="14" fill="#212529">Image A</text>
+  <line x1="580" y1="95" x2="610" y2="95" stroke="#d1916b" stroke-width="3"/>
+  <text x="620" y="100" font-family="Arial, sans-serif" font-size="14" fill="#212529">Image B</text>
+
+  <!-- Title -->
+  <text x="410" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#212529" text-anchor="middle">Lensed Supernova Time Delay Measurement</text>
+</svg>
