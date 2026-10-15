@@ -103,6 +103,10 @@ ninja.data = [
   {%- if site.socials_in_search -%}
     {%- for social in site.data.socials -%}
       {%- case social[0] -%}
+        {%- when "ads_url" -%}
+          {%- assign social_id = "social-ads" -%}
+          {%- assign social_title = "NASA ADS" -%}
+          {%- capture social_url %}"{{ social[1] }}"{% endcapture -%}
         {%- when "acm_id" -%}
           {%- assign social_id = "social-acm" -%}
           {%- assign social_title = "ACM DL" -%}
@@ -301,33 +305,5 @@ ninja.data = [
       },
     {%- endfor -%}
   {%- endif -%}
-  {%- if site.enable_darkmode -%}
-    {
-      id: 'light-theme',
-      title: 'Change theme to light',
-      description: 'Change the theme of the site to Light',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("light");
-      },
-    },
-    {
-      id: 'dark-theme',
-      title: 'Change theme to dark',
-      description: 'Change the theme of the site to Dark',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("dark");
-      },
-    },
-    {
-      id: 'system-theme',
-      title: 'Use system default theme',
-      description: 'Change the theme of the site to System Default',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("system");
-      },
-    },
-  {%- endif -%}
+
 ];

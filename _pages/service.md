@@ -67,7 +67,7 @@ hide_title: true
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header">
-          <button class="accordion-button" type="button" data-toggle="collapse" data-target="#cosmic-lighthouses">
+          <button class="accordion-button" type="button" data-toggle="collapse" data-target="#cosmic-lighthouses" aria-controls="cosmic-lighthouses" aria-expanded="true">
             Cosmic Lighthouses Conference (Cambridge, July 2025)
           </button>
         </h2>
@@ -84,7 +84,7 @@ hide_title: true
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#desc-sprint">
+          <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#desc-sprint" aria-controls="desc-sprint" aria-expanded="false">
             DESC Sprint Week (Cambridge, November 2025)
           </button>
         </h2>
@@ -96,7 +96,7 @@ hide_title: true
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#sn-ia-workshop">
+          <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#sn-ia-workshop" aria-controls="sn-ia-workshop" aria-expanded="false">
             Type Ia Supernova Modelling Workshop (Stockholm, July 2024)
           </button>
         </h2>
@@ -113,7 +113,7 @@ hide_title: true
       </div>
       <div class="accordion-item">
         <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#nas-meeting">
+          <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#nas-meeting" aria-controls="nas-meeting" aria-expanded="false">
             NAM: Exploring Exploding Transient Diversity (July 2021)
           </button>
         </h2>
@@ -137,7 +137,7 @@ hide_title: true
       <h5>Public Talks</h5>
       <p class="mt-2"><strong>"Cosmic Lighthouses: Charting the Universe with Supernovae"</strong><br>
       <small><em>IoA Open Evening, Cambridge (2024)</em><br>Public talk to 200 attendees at the Institute of Astronomy's open evening.</small></p>
-      <div style="width: 66%; margin: 20px auto 0 auto; display: block;">
+      <div class="public-lecture">
         <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
           <iframe src="https://www.youtube.com/embed/U5Ff5xlYVmo?start=2" title="Cosmic Lighthouses Public Lecture" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
         </div>

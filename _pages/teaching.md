@@ -3,6 +3,7 @@ layout: page
 permalink: /teaching/
 title: Supervision and Teaching
 description: Student supervision, teaching experience, and mentoring activities
+nav_title: Teaching
 nav: true
 nav_order: 5
 hide_title: true
@@ -58,7 +59,7 @@ hide_title: true
           <!-- Part Ia Physics -->
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#cambridge-partia">
+              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#cambridge-partia" aria-controls="cambridge-partia" aria-expanded="false">
                 Part Ia Physics (2025-Present)
               </button>
             </h2>
@@ -77,7 +78,7 @@ hide_title: true
           <!-- Stellar Dynamics -->
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#cambridge-stellar">
+              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#cambridge-stellar" aria-controls="cambridge-stellar" aria-expanded="false">
                 Stellar Dynamics and Structure of Galaxies (2023-2024)
               </button>
             </h2>
@@ -102,7 +103,7 @@ hide_title: true
           <!-- Physics from Evidence -->
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#southampton1">
+              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#southampton1" aria-controls="southampton1" aria-expanded="false">
                 Physics from Evidence (2018-2022)
               </button>
             </h2>
@@ -120,7 +121,7 @@ hide_title: true
           <!-- Computer Techniques -->
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#southampton2">
+              <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#southampton2" aria-controls="southampton2" aria-expanded="false">
                 Computer Techniques in Physics (2018-2022)
               </button>
             </h2>

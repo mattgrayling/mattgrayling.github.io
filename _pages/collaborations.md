@@ -11,7 +11,6 @@ hide_title: true
 <div class="cv">
   <!-- Introductory Card -->
   <div class="card p-3">
-    <h3 class="card-title font-weight-medium">Collaborations</h3>
     <p class="lead">A summary of my major research collaborations and scientific partnerships.</p>
   </div>
 

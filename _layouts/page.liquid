@@ -9,14 +9,11 @@ layout: default
 {% endif %}
 
 <div class="post">
-  {% if page.hide_title %}
-    <h1 class="sr-only">{{ page.title | escape }}</h1>
-  {% else %}
   <header class="post-header">
+    {% if page.collection == 'projects' %}<a class="section-back" href="{{ '/research/' | relative_url }}">Research</a>{% endif %}
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-description">{{ page.description }}</p>
+    {% unless page.hide_title %}{% if page.description %}<p class="post-description">{{ page.description }}</p>{% endif %}{% endunless %}
   </header>
-  {% endif %}
 
   <article>
     {{ content }}

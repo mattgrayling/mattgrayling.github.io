@@ -2,6 +2,7 @@
 layout: about
 title: About
 permalink: /
+intro: I am a Research Associate at the Institute of Astronomy at the University of Cambridge. My research lies at the intersection of supernova astrophysics, cosmology and statistical inference. I focus on understanding what drives the astrophysical variation across the population of type Ia supernovae (SNe Ia), and how uncertainty about their physical properties affects cosmological constraints.
 subtitle: Postdoctoral Research Associate at <a href='https://www.ast.cam.ac.uk/'>Institute of Astronomy</a>, University of Cambridge
 
 profile:
@@ -26,11 +27,6 @@ latest_posts:
 ---
 
 <div class="cv">
-  <!-- Introduction Card -->
-  <div class="card mt-3 p-3">
-    <p class="lead">I am a Research Associate at the Institute of Astronomy at the University of Cambridge. My research lies at the intersection of supernova astrophysics, cosmology and statistical inference. I focus on understanding what drives the astrophysical variation across the population of type Ia supernovae (SNe Ia), and how uncertainty about their physical properties affects cosmological constraints.</p>
-  </div>
-
   <!-- Current Work -->
   <div class="row mt-4">
     <div class="col-md-6 mb-3">
