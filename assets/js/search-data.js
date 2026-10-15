@@ -60,13 +60,19 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Curriculum Vitae",
+          description: "CV",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
           },
         },{id: "news-new-paper-on-the-arxiv-bayesn-td-time-delay-and-h-estimation-for-lensed-sn-h0pe-we-measure-time-delays-and-magnifications-for-the-gravitationally-lensed-supernova-h0pe-yielding-h-0-69-3-12-6-7-8-km-s-mpc",
           title: 'New paper on the arXiv: BayeSN-TD: Time Delay and H₀ Estimation for Lensed...',
+          description: "",
+          section: "News",},{id: "news-new-paper-on-the-arxiv-bayesn-dovekie-joint-photometric-cross-calibration-and-sed-modelling-of-type-ia-supernovae-we-jointly-train-the-bayesn-model-and-constrain-photometric-cross-calibration-between-instruments-using-calibration-constraints-from-dovekie-as-a-prior",
+          title: 'New paper on the arXiv: BayeSN × Dovekie: Joint Photometric Cross-calibration and SED...',
+          description: "",
+          section: "News",},{id: "news-new-paper-jax-snana-a-gpu-accelerated-supernova-framework-for-the-sbi-era-the-code-and-documentation-are-available-for-supernova-simulations-light-curve-fitting-and-cosmological-inference-with-jax",
+          title: 'New paper: jax-SNANA: A GPU-accelerated Supernova Framework for the SBI Era. The code...',
           description: "",
           section: "News",},{id: "projects-supernova-host-environments",
           title: 'Supernova Host Environments',
@@ -105,36 +111,10 @@ ninja.data = [{
           window.open("https://orcid.org/0000-0002-6741-983X", "_blank");
         },
       },{
-        id: 'social-ads_url',
-        title: 'Ads_url',
+        id: 'social-ads',
+        title: 'NASA ADS',
         section: 'Socials',
         handler: () => {
-          window.open("", "_blank");
+          window.open("https://ui.adsabs.harvard.edu/search/filter_doctype_facet_hier_fq_doctype=AND&filter_doctype_facet_hier_fq_doctype=doctype_facet_hier%3A%220%2FArticle%22&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq=%7B!type%3Daqp%20v%3D%24fq_doctype%7D&fq_database=(database%3Aastronomy%20OR%20database%3Aphysics)&fq_doctype=(doctype_facet_hier%3A%220%2FArticle%22)&q=%20author%3A%22Grayling%2C%20M%22&sort=date%20desc%2C%20bibcode%20desc&p_=00", "_blank");
         },
-      },{
-      id: 'light-theme',
-      title: 'Change theme to light',
-      description: 'Change the theme of the site to Light',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("light");
-      },
-    },
-    {
-      id: 'dark-theme',
-      title: 'Change theme to dark',
-      description: 'Change the theme of the site to Dark',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("dark");
-      },
-    },
-    {
-      id: 'system-theme',
-      title: 'Use system default theme',
-      description: 'Change the theme of the site to System Default',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("system");
-      },
-    },];
+      },];
