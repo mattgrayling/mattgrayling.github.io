@@ -53,7 +53,7 @@ nav_order: 3
       <div class="col-md-3">
         <a href="/software/" class="related-card card">
           <div class="card-body">
-            <strong><i class="fas fa-code"></i>BayeSN Software</strong>
+            <strong><i class="fas fa-code"></i>Software</strong>
           </div>
         </a>
       </div>

@@ -21,7 +21,7 @@ hide_title: true
     <div class="col-md-6 mb-3">
       <div class="card h-100 p-3">
         <h4 class="card-title"><a href="https://lsstdesc.org/" target="_blank" rel="noopener noreferrer">Dark Energy Science Collaboration</a></h4>
-        <p class="text-muted small">Lead of SN Ia Modelling Topical Team (2024-Present)</p>
+        <p class="text-muted small">Co-convener of the Time Domain Working Group</p>
         <p>Preparing for the Legacy Survey of Space and Time at the Vera C. Rubin Observatory (LSST), which will drive the next decade of supernova cosmology.
         I am working on integrating BayeSN within DESC cosmology pipelines.</p>
       </div>
@@ -44,7 +44,7 @@ hide_title: true
         <h4 class="card-title"><a href="https://yse.ucsc.edu/" target="_blank" rel="noopener noreferrer">Young Supernova Experiment</a></h4>
         <p class="text-muted small">Active Observer</p>
         <p>Member of YSE, a transient survey on the Pan-STARRS telescopes. I have led observing nights using DECAM to 
-        follow up YSE targets and chaired or participated in several junior review panesl for YSE papers.</p>
+        follow up YSE targets and chaired or participated in several junior review panels for YSE papers.</p>
       </div>
     </div>
 

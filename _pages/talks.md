@@ -12,6 +12,25 @@ hide_title: true
 
   <div class="timeline">
 
+    <!-- 2026 Invited: Open University -->
+    <div class="timeline-item">
+      <div class="timeline-dot" style="background-color: var(--global-theme-color);"></div>
+      <div class="timeline-content">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <h5 class="card-title mb-0">Bridging the Gap Between Supernova Cosmology and Astrophysics</h5>
+              <span class="badge bg-warning text-dark ml-2"><i class="fas fa-star"></i> Invited</span>
+            </div>
+            <h6 class="text-muted mb-2"><i class="far fa-calendar-alt fa-fw"></i> February 2026</h6>
+            <p class="mb-2"><i class="fas fa-map-marker-alt fa-fw"></i> Seminar, The Open University, UK</p>
+            <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#pdf-modal" data-pdf-url="/assets/pdf/slides/bridging_gap_ou_2026.pdf" data-pdf-title="Bridging the Gap Between Supernova Cosmology and Astrophysics"><i class="fas fa-eye"></i> View Slides</button>
+            <a href="/assets/pdf/slides/bridging_gap_ou_2026.pdf" class="btn btn-sm btn-outline-secondary" download><i class="fas fa-download"></i> Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- 2025 Invited: Duke -->
     <div class="timeline-item">
       <div class="timeline-dot" style="background-color: var(--global-theme-color);"></div>

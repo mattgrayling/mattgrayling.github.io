@@ -59,7 +59,7 @@ hide_title: true
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#cambridge-partia">
-                <i class="fas fa-atom fa-fw"></i> Part Ia Physics (2025-Present)
+                Part Ia Physics (2025-Present)
               </button>
             </h2>
             <div id="cambridge-partia" class="accordion-collapse collapse" data-parent="#teachingAccordionCambridge">
@@ -78,7 +78,7 @@ hide_title: true
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#cambridge-stellar">
-                <i class="fas fa-star fa-fw"></i> Stellar Dynamics and Structure of Galaxies (2023-2024)
+                Stellar Dynamics and Structure of Galaxies (2023-2024)
               </button>
             </h2>
             <div id="cambridge-stellar" class="accordion-collapse collapse" data-parent="#teachingAccordionCambridge">
@@ -103,7 +103,7 @@ hide_title: true
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#southampton1">
-                <i class="fas fa-flask fa-fw"></i> Physics from Evidence (2018-2022)
+                Physics from Evidence (2018-2022)
               </button>
             </h2>
             <div id="southampton1" class="accordion-collapse collapse" data-parent="#teachingAccordionSouthampton">
@@ -121,7 +121,7 @@ hide_title: true
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#southampton2">
-                <i class="fas fa-code fa-fw"></i> Computer Techniques in Physics (2018-2022)
+                Computer Techniques in Physics (2018-2022)
               </button>
             </h2>
             <div id="southampton2" class="accordion-collapse collapse" data-parent="#teachingAccordionSouthampton">

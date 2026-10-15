@@ -20,7 +20,7 @@ category: current
     I have extended BayeSN to develop <strong>BayeSN-TD</strong>, a Bayesian framework for inferring time delays and magnifications
     of strongly-lensed SNe Ia. BayeSN-TD is designed to marginalise over the impact of microlensing, time-dependent magnification fluctuations
     caused by stars in the lensing galaxy, which can bias time delay measurements if not accounted for. I applied BayeSN-TD to
-    SN H0pe, the first multiply-imaged lensed SN Ia suitable for a competetive $H_0$ measurement, to infer time delays
+    SN H0pe, the first multiply-imaged lensed SN Ia suitable for a competitive $H_0$ measurement, to infer time delays
     and a corresponding $H_0$ value.
   </p>
 </div>
@@ -73,34 +73,7 @@ category: current
       <div class="card">
         <h3 class="card-title font-weight-medium"><i class="fas fa-file-alt"></i> Relevant Publications</h3>
         <div class="publications">
-          <!-- Publication 1 -->
-          <div class="bibliography">
-            <div class="list-group-item">
-              <div class="row">
-                <div class="col-sm-2 abbr">
-                  <div class="journal-badge-container" style="background-color: transparent;">
-                    <a href="https://arxiv.org" class="journal-badge-link">
-                      <img src="/assets/img/journals/arxiv_test.png" alt="arXiv" class="journal-logo-img">
-                    </a>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="title">BayeSN-TD: Time Delay and H₀ Estimation for Lensed SN H0pe</div>
-                  <div class="author">
-                    <em>M. Grayling</em>, S. Thorp, K. S. Mandel, M. Pascale, J. D. R. Pierel, E. E. Hayes, C. Larison, A. Agrawal, and G. Narayan
-                  </div>
-                  <div class="periodical">
-                    <em>arXiv e-prints</em>, October 2025
-                  </div>
-                  <div class="links">
-                    <a href="https://doi.org/10.48550/arXiv.2510.11719" class="btn btn-sm z-depth-0" role="button"><i class="fas fa-link fa-fw"></i> DOI</a>
-                    <a href="https://ui.adsabs.harvard.edu/abs/2025arXiv251011719G" class="btn btn-sm z-depth-0" role="button"><i class="ai ai-ads ai-fw"></i> ADS</a>
-                    <a class="bibtex btn btn-sm z-depth-0" role="button"><i class="fas fa-quote-left fa-fw"></i> Bib</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          {% bibliography --group_by none --query @*[key=2025arXiv251011719G || key=2025arXiv251007637A] %}
         </div>
       </div>
     </div>

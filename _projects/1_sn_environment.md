@@ -10,7 +10,7 @@ category: current
 <div class="intro-card">
   <h2>Understanding the 'Mass Step'</h2>
   <p>
-    After applying typical standardisation methods, we find that SNe Ia in massive galaxies appear systematically (~0.05-0.1 mag brighter)
+    After applying typical standardisation methods, we find that SNe Ia in massive galaxies appear systematically brighter (~0.05-0.1 mag)
     than those in low-mass galaxies. Understanding this effect is vital for both supernova astrophysics and cosmology; learning about how the properties
     of SNe Ia are affected by their environment will help inform us about their progenitor stars, while proper treatment of this
     dependence is vital to accurate distance estimation. There are two possible causes: either there are intrinsic differences
@@ -21,6 +21,11 @@ category: current
     I have investigated this problem using <strong>BayeSN</strong>, a next-generation SED model for SNe Ia that leverages hierarchical Bayesian
     inference to explicitly separate dust extinction from the intrinsic properties of SNe Ia. We can apply BayeSN to large samples of SNe Ia
     to infer from data the relative contributions of these two effects.
+  </p>
+  <p>
+    Recent work extends this analysis to the <a href="https://arxiv.org/abs/2605.06799">ZTF SN Ia DR2 sample</a>.
+    In <a href="https://arxiv.org/abs/2606.19429">BayeSN &times; Dovekie</a>, we jointly model photometric
+    cross-calibration and the supernova SED, connecting model training to the calibration needed for precise distances.
   </p>
 </div>
 
@@ -53,7 +58,7 @@ category: current
 
     <div class="finding-card mb-3">
       <h6><i class="fas fa-check-circle"></i> Validation on Simulations</h6>
-      <p>We apply BayeSN to simulation based on alternative SED model, SALT, which incorporate dust and intrinsic
+      <p>We apply BayeSN to simulations based on an alternative SED model, SALT, which incorporate dust and intrinsic
       differences, verifying that BayeSN is indeed able to distinguish these two effects separately</p>
     </div>
   </div>
@@ -73,63 +78,7 @@ category: current
       <div class="card">
         <h3 class="card-title font-weight-medium"><i class="fas fa-file-alt"></i> Relevant Publications</h3>
         <div class="publications">
-          <!-- Publication 1 -->
-          <div class="bibliography">
-            <div class="list-group-item">
-              <div class="row">
-                <div class="col-sm-2 abbr">
-                  <div class="journal-badge-container" style="background-color: transparent;">
-                    <a href="https://academic.oup.com/mnras" class="journal-badge-link">
-                      <img src="/assets/img/journals/mnras_test.png" alt="MNRAS" class="journal-logo-img">
-                    </a>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="title">Scalable hierarchical BayeSN inference: investigating dependence of SN Ia host galaxy dust properties on stellar mass and redshift</div>
-                  <div class="author">
-                    <em>Matthew Grayling</em>, Stephen Thorp, Kaisey S. Mandel, Suhail Dhawan, Ana Sofia M. Uzsoy, Benjamin M. Boyd, Erin E. Hayes, and Sam M. Ward
-                  </div>
-                  <div class="periodical">
-                    <em>Monthly Notices of the Royal Astronomical Society</em>, June 2024
-                  </div>
-                  <div class="links">
-                    <a href="https://doi.org/10.1093/mnras/stae1202" class="btn btn-sm z-depth-0" role="button"><i class="fas fa-link fa-fw"></i> DOI</a>
-                    <a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.531..953G" class="btn btn-sm z-depth-0" role="button"><i class="ai ai-ads ai-fw"></i> ADS</a>
-                    <a class="bibtex btn btn-sm z-depth-0" role="button"><i class="fas fa-quote-left fa-fw"></i> Bib</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Publication 2 -->
-          <div class="bibliography">
-            <div class="list-group-item">
-              <div class="row">
-                <div class="col-sm-2 abbr">
-                  <div class="journal-badge-container" style="background-color: transparent;">
-                    <a href="https://academic.oup.com/mnras" class="journal-badge-link">
-                      <img src="/assets/img/journals/mnras_test.png" alt="MNRAS" class="journal-logo-img">
-                    </a>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="title">BayeSN and SALT: a comparison of dust inference across SN Ia light-curve models with DES5YR</div>
-                  <div class="author">
-                    <em>M. Grayling</em> and B. Popovic
-                  </div>
-                  <div class="periodical">
-                    <em>Monthly Notices of the Royal Astronomical Society</em>, September 2025
-                  </div>
-                  <div class="links">
-                    <a href="https://doi.org/10.1093/mnras/staf1345" class="btn btn-sm z-depth-0" role="button"><i class="fas fa-link fa-fw"></i> DOI</a>
-                    <a href="https://ui.adsabs.harvard.edu/abs/2025MNRAS.542.2060G" class="btn btn-sm z-depth-0" role="button"><i class="ai ai-ads ai-fw"></i> ADS</a>
-                    <a class="bibtex btn btn-sm z-depth-0" role="button"><i class="fas fa-quote-left fa-fw"></i> Bib</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          {% bibliography --group_by none --query @*[key=2026arXiv260506799G || key=2026arXiv260619429G || key=2025MNRAS.542.2060G || key=2024MNRAS.531..953G] %}
         </div>
       </div>
     </div>

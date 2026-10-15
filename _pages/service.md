@@ -12,25 +12,9 @@ hide_title: true
   <!-- Leadership -->
   <div class="card mt-3 p-3">
     <h3 class="card-title font-weight-medium"><i class="fas fa-users-cog"></i> Leadership Roles</h3>
-    <div class="accordion mt-3" id="leadershipAccordion">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button" type="button" data-toggle="collapse" data-target="#desc-lead">
-            Lead, SN Ia Modelling Topical Team (DESC, 2024-Present)
-          </button>
-        </h2>
-        <div id="desc-lead" class="accordion-collapse collapse show" data-parent="#leadershipAccordion">
-          <div class="accordion-body">
-            <p>Coordinate SN Ia modelling efforts in <a href="/collaborations/">DESC</a>, preparing for LSST:</p>
-            <ul>
-              <li>Organize meetings and set research priorities</li>
-              <li>Chaired workshop on SN Ia modelling in Stockholm, July 2024</li>  
-              <li>Integrating <a href="/software/">BayeSN</a> into DESC cosmology pipelines</li>
-              <li>Develop methods for testing and validating different methods</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <div class="mt-3">
+      <h4>Co-convener, Time Domain Working Group</h4>
+      <p><a href="/collaborations/">Dark Energy Science Collaboration (DESC)</a> — current role.</p>
     </div>
   </div>
 
@@ -91,7 +75,7 @@ hide_title: true
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#sn-ia-workshop">
-            Type Ia Supernova Modelling Workshop (Stockholm, July 2025)
+            Type Ia Supernova Modelling Workshop (Stockholm, July 2024)
           </button>
         </h2>
         <div id="sn-ia-workshop" class="accordion-collapse collapse" data-parent="#conferenceAccordion">

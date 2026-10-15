@@ -19,8 +19,14 @@ category: current
     SBI is a powerful new tool which allows us to perform Bayesian inference even in cases with complex effects,
     such as survey selection bias, which cannot be expressed analytically and incorporated in a likelihood. SBI involves
     forward-simulating data and learning the mapping from observations to parameters directly using neural networks. As long
-    as we can simulate realistic observed data from the model, we can perform inference. With LSST imminent, I am interested
+    as we can simulate realistic observed data from the model, we can perform inference. For LSST, I am interested
     in the promise of SBI to deliver powerful new methods for cosmological inference for next-generation surveys.
+  </p>
+  <p>
+    I developed <a href="/software/">jax-SNANA</a> to accelerate supernova simulations, light curve fitting and cosmological
+    analysis with JAX. Its compiled simulator supports SBI workflows. My recent collaborative work includes
+    <a href="https://arxiv.org/abs/2603.11165">FlowSN</a>, which learns a likelihood that accounts for survey selection,
+    and <a href="https://arxiv.org/abs/2607.28725">SBI modelling of SN Ia populations</a>.
   </p>
 </div>
 
@@ -69,63 +75,7 @@ category: current
       <div class="card">
         <h3 class="card-title font-weight-medium"><i class="fas fa-file-alt"></i> Key Publications</h3>
         <div class="publications">
-          <!-- Publication 1 -->
-          <div class="bibliography">
-            <div class="list-group-item">
-              <div class="row">
-                <div class="col-sm-2 abbr">
-                  <div class="journal-badge-container" style="background-color: transparent;">
-                    <a href="https://academic.oup.com/mnras" class="journal-badge-link">
-                      <img src="/assets/img/journals/mnras_test.png" alt="MNRAS" class="journal-logo-img">
-                    </a>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="title">SIDE-real: Supernova Ia Dust Extinction with truncated marginal neural ratio estimation applied to real data</div>
-                  <div class="author">
-                    K. Karchev, <em>M. Grayling</em>, B. M. Boyd, R. Trotta, K. S. Mandel, and C. Weniger
-                  </div>
-                  <div class="periodical">
-                    <em>Monthly Notices of the Royal Astronomical Society</em>, June 2024
-                  </div>
-                  <div class="links">
-                    <a href="https://doi.org/10.1093/mnras/stae1038" class="btn btn-sm z-depth-0" role="button"><i class="fas fa-link fa-fw"></i> DOI</a>
-                    <a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.530.3881K" class="btn btn-sm z-depth-0" role="button"><i class="ai ai-ads ai-fw"></i> ADS</a>
-                    <a class="bibtex btn btn-sm z-depth-0" role="button"><i class="fas fa-quote-left fa-fw"></i> Bib</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Publication 2 -->
-          <div class="bibliography">
-            <div class="list-group-item">
-              <div class="row">
-                <div class="col-sm-2 abbr">
-                  <div class="journal-badge-container" style="background-color: transparent;">
-                    <a href="https://arxiv.org" class="journal-badge-link">
-                      <img src="/assets/img/journals/arxiv_test.png" alt="arXiv" class="journal-logo-img">
-                    </a>
-                  </div>
-                </div>
-                <div class="col-sm-10">
-                  <div class="title">Accounting for Selection Effects in Supernova Cosmology with Simulation-Based Inference and Hierarchical Bayesian Modelling</div>
-                  <div class="author">
-                    B. M. Boyd, <em>M. Grayling</em>, S. Thorp, and K. S. Mandel
-                  </div>
-                  <div class="periodical">
-                    <em>arXiv e-prints</em>, July 2024
-                  </div>
-                  <div class="links">
-                    <a href="https://doi.org/10.48550/arXiv.2407.15923" class="btn btn-sm z-depth-0" role="button"><i class="fas fa-link fa-fw"></i> DOI</a>
-                    <a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240715923B" class="btn btn-sm z-depth-0" role="button"><i class="ai ai-ads ai-fw"></i> ADS</a>
-                    <a class="bibtex btn btn-sm z-depth-0" role="button"><i class="fas fa-quote-left fa-fw"></i> Bib</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          {% bibliography --group_by none --query @*[key=2026arXiv261019000G || key=2026arXiv260728725P || key=2026arXiv260311165B || key=2024MNRAS.530.3881K || key=2024arXiv240715923B] %}
         </div>
       </div>
     </div>
