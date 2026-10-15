@@ -28,16 +28,15 @@ latest_posts:
 <div class="cv">
   <!-- Introduction Card -->
   <div class="card mt-3 p-3">
-    <p class="lead"> I am a Research Associate at the Institute of Astronomy at the University of Cambridge, applying cutting-edge statistical and machine learning techniques to analyse populations of type Ia supernovae (SNe Ia). My research sits at the interface of astrophysics and cosmology, focusing on understanding the physical properties of SNe Ia which allows us to use these events as accurate, precise cosmological probes.
-</p>
+    <p class="lead">I am a Research Associate at the Institute of Astronomy at the University of Cambridge. My research lies at the intersection of supernova astrophysics, cosmology and statistical inference. I focus on understanding what drives the astrophysical variation across the population of type Ia supernovae (SNe Ia), and how uncertainty about their physical properties affects cosmological constraints.</p>
   </div>
 
   <!-- Current Work -->
   <div class="row mt-4">
     <div class="col-md-6 mb-3">
       <div class="card h-100 p-3">
-        <h4 class="card-title"><i class="fas fa-code"></i> BayeSN Development</h4>
-        <p> My work predominantly focuses on the development and application of <strong><a href="/software/">BayeSN</a></strong>, 
+        <h4 class="card-title">BayeSN Development</h4>
+        <p>I lead development of <strong><a href="/software/">BayeSN</a></strong>,
         a next-generation, GPU-accelerated hierarchical Bayesian SED model for SNe Ia that disentangles the intrinsic properties of these events from
             the impact of astrophysical dust.</p>
       </div>
@@ -45,15 +44,15 @@ latest_posts:
 
     <div class="col-md-6 mb-3">
       <div class="card h-100 p-3">
-        <h4 class="card-title"><i class="fas fa-users"></i> Preparing for LSST</h4>
-        <p>I am co-convener of the Time Domain Working Group within the <a href="/collaborations/">Dark Energy Science Collaboration (DESC)</a>, working towards time-domain cosmology with the Vera C. Rubin Observatory.</p>
+        <h4 class="card-title">Preparing for LSST</h4>
+        <p>As co-convener of the Time-Domain Working Group in the <a href="/collaborations/">Dark Energy Science Collaboration (DESC)</a>, I am coordinating preparation for the first SN cosmology analyses with the Legacy Survey of Space and Time (LSST) at the Vera C. Rubin Observatory.</p>
       </div>
     </div>
   </div>
 
   <!-- Research Interests -->
   <div class="card mt-3 p-3">
-    <h3 class="card-title font-weight-medium"><i class="fas fa-telescope"></i> Research Interests</h3>
+    <h3 class="card-title font-weight-medium">Research Interests</h3>
     <div class="row mt-3">
       <div class="col-md-6">
         <p><strong>Effect of Environment:</strong> Investigating the link between properties of SNe Ia and their environments, improving our physical understanding </p>
@@ -69,7 +68,7 @@ latest_posts:
 
   <!-- Broader Work -->
   <div class="card mt-3 p-3">
-    <h3 class="card-title font-weight-medium"><i class="fas fa-project-diagram"></i> Broader Research</h3>
+    <h3 class="card-title font-weight-medium">Broader Research</h3>
     <p>My PhD focused on population analysis of core-collapse supernovae discovered by the Dark Energy Survey, and I retain an interest in improved physical understanding of these events. My statistical expertise also enables collaborations
     beyond supernovae, including work focused on constraining galaxy morphology in the early universe using JWST data.</p>
   </div>

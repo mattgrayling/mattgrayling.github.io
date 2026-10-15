@@ -25,7 +25,7 @@ nav_order: 3
 <div class="cv">
   <!-- First Author Publications -->
   <div class="card mt-3">
-    <h3 class="card-title font-weight-medium"><i class="fas fa-user-edit"></i> First Author Publications</h3>
+    <h3 class="card-title font-weight-medium">First Author Publications</h3>
     <div class="publications first-author-pubs">
       {% bibliography --group_by none --query @*[author~=^{Grayling}] %}
     </div>
@@ -41,7 +41,7 @@ nav_order: 3
 
   <!-- Related Content -->
   <div class="related-content">
-    <h4><i class="fas fa-network-wired"></i>Explore Further</h4>
+    <h4>Explore Further</h4>
     <div class="row related-content-row">
       <div class="col-md-3">
         <a href="/research/" class="related-card card">

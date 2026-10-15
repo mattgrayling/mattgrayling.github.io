@@ -11,7 +11,7 @@ hide_title: true
 <div class="cv">
   <!-- Introductory Card -->
   <div class="card p-3">
-    <h3 class="card-title font-weight-medium"><i class="fas fa-users"></i> Collaborations</h3>
+    <h3 class="card-title font-weight-medium">Collaborations</h3>
     <p class="lead">A summary of my major research collaborations and scientific partnerships.</p>
   </div>
 
@@ -21,7 +21,7 @@ hide_title: true
     <div class="col-md-6 mb-3">
       <div class="card h-100 p-3">
         <h4 class="card-title"><a href="https://lsstdesc.org/" target="_blank" rel="noopener noreferrer">Dark Energy Science Collaboration</a></h4>
-        <p class="text-muted small">Co-convener of the Time Domain Working Group</p>
+        <p class="text-muted small">Co-convener of the Time-Domain Working Group</p>
         <p>Preparing for the Legacy Survey of Space and Time at the Vera C. Rubin Observatory (LSST), which will drive the next decade of supernova cosmology.
         I am working on integrating BayeSN within DESC cosmology pipelines.</p>
       </div>
@@ -60,7 +60,7 @@ hide_title: true
 
   <!-- Related Content -->
   <div class="related-content">
-    <h4><i class="fas fa-network-wired"></i>Explore Further</h4>
+    <h4>Explore Further</h4>
     <div class="row related-content-row">
       <div class="col-md-3">
         <a href="/research/" class="related-card card">

@@ -11,7 +11,7 @@ hide_title: true
 <div class="cv">
   <!-- Student Supervision -->
   <div class="card mt-3 p-3">
-    <h3 class="card-title font-weight-medium"><i class="fas fa-user-graduate"></i> Student Supervision</h3>
+    <h3 class="card-title font-weight-medium">Student Supervision</h3>
     <div class="mt-3">
       <!-- PhD Student -->
       <div class="student-entry mb-4">
@@ -20,7 +20,7 @@ hide_title: true
         </p>
         <blockquote class="ml-4">
           <p class="mb-1 font-italic">Accounting for Selection Effects in Supernova Cosmology with Simulation-Based Inference</p>
-          <p class="small text-muted">Developing methods to account for survey selection biases using hierarchical Bayesian modeling and simulation-based inference.</p>
+          <p class="small text-muted">Developing methods to account for survey selection biases using hierarchical Bayesian modelling and simulation-based inference.</p>
         </blockquote>
       </div>
 
@@ -49,11 +49,11 @@ hide_title: true
 
   <!-- Teaching Experience -->
   <div class="card mt-3 p-3">
-    <h3 class="card-title font-weight-medium"><i class="fas fa-chalkboard-teacher"></i> Teaching Experience</h3>
+    <h3 class="card-title font-weight-medium">Teaching Experience</h3>
     <div class="row mt-3">
       <!-- Cambridge Column -->
       <div class="col-md-6">
-        <h4 class="font-weight-light mb-3"><i class="fas fa-university"></i> University of Cambridge</h4>
+        <h4 class="font-weight-light mb-3">University of Cambridge</h4>
         <div class="accordion" id="teachingAccordionCambridge">
           <!-- Part Ia Physics -->
           <div class="accordion-item">
@@ -97,7 +97,7 @@ hide_title: true
 
       <!-- Southampton Column -->
       <div class="col-md-6 mt-4 mt-md-0">
-        <h4 class="font-weight-light mb-3"><i class="fas fa-university"></i> University of Southampton</h4>
+        <h4 class="font-weight-light mb-3">University of Southampton</h4>
         <div class="accordion" id="teachingAccordionSouthampton">
           <!-- Physics from Evidence -->
           <div class="accordion-item">
@@ -141,7 +141,7 @@ hide_title: true
 
   <!-- Related Content -->
   <div class="related-content">
-    <h4><i class="fas fa-network-wired"></i>Explore Further</h4>
+    <h4>Explore Further</h4>
     <div class="row related-content-row">
       <div class="col-md-3">
         <a href="/research/" class="related-card card">

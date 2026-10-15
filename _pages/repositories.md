@@ -11,7 +11,7 @@ hide_title: true
 <div class="cv">
   <!-- jax-SNANA Card -->
   <div class="card mt-3 p-3">
-    <h3 class="card-title font-weight-medium"><i class="fab fa-python"></i> <a href="https://github.com/mattgrayling/jax-snana">jax-SNANA</a></h3>
+    <h3 class="card-title font-weight-medium"><a href="https://github.com/mattgrayling/jax-snana">jax-SNANA</a></h3>
     <p class="lead">GPU-accelerated supernova simulation, light curve fitting and cosmology</p>
     <p>I developed jax-SNANA, a JAX implementation of the SNANA supernova analysis framework. It supports survey simulations,
        light curve fitting, distance estimation and cosmological inference on CPUs and GPUs, with a compiled simulator
@@ -25,35 +25,14 @@ hide_title: true
 
   <!-- BayeSN Card -->
   <div class="card mt-3 p-3">
-    <h3 class="card-title font-weight-medium"><i class="fab fa-python"></i> BayeSN</h3>
+    <h3 class="card-title font-weight-medium">BayeSN</h3>
     <p class="lead">Next-generation SED model for type Ia supernovae</p>
 
-    <div class="callout-box callout-info mt-3">
-      <h6><i class="fas fa-lightbulb"></i>What makes BayeSN unique?</h6>
-      <p> BayeSN lies at the intersection of astrophysics, cosmology and cutting-edge statistical inference. Using
-      powerful computational tools like JAX and NumPyro, BayeSN enables fast inference across populations of SNe Ia
-      to provide astrophysical insight into their properties and improved standardisation for cosmology. Using BayeSN
-      I have demonstrated intrinsic differences between SNe Ia which explode in different environments.</p>
-    </div>
-
-    <div class="row mt-3">
-      <div class="col-md-6">
-        <h5><i class="fas fa-cogs text-primary"></i> Capabilities</h5>
-        <ul>
-          <li>Population-level inference for thousands of supernovae</li>
-          <li>GPU-accelerated using jax/numpyro for scalability</li>
-          <li>Disentangles dust extinction from intrinsic SN properties </li>
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <h5><i class="fas fa-tasks text-success"></i> Applications</h5>
-        <ul>
-          <li>Improved SN standardisation for cosmology</li>
-          <li>Provides insights into the environmental-dependence of SNe Ia</li>
-          <li>Incorporated in SNANA cosmology pipeline</li>
-        </ul>
-      </div>
-    </div>
+    <p>I lead development of BayeSN, a hierarchical Bayesian spectral energy distribution model that infers the intrinsic properties of SNe Ia jointly with extinction caused by dust. Using my GPU-accelerated BayeSN framework, I have demonstrated intrinsic differences between SNe Ia in different environments, with significant implications for cosmology.</p>
+    <p>BayeSN is integrated into the SNANA supernova cosmology pipeline.</p>
+    <p>Other groups have used BayeSN to analyse supernovae observed with JWST, including
+       SN 2023adsy (<a href="https://doi.org/10.1051/0004-6361/202554209">Vinkó &amp; Regős 2025</a>) and
+       SN 2023aeax (<a href="https://arxiv.org/abs/2411.11953">Pierel et al. 2025</a>).</p>
 
     <div class="mt-3">
       <span class="badge bg-primary">Python</span>
@@ -65,14 +44,11 @@ hide_title: true
 
   <!-- BayeSN-TD Card -->
   <div class="card mt-3 p-3">
-    <h3 class="card-title font-weight-medium"><i class="fab fa-python"></i> <a href="https://github.com/bayesn/bayesn-td" target="_blank" rel="noopener noreferrer">BayeSN-TD</a></h3>
+    <h3 class="card-title font-weight-medium"><a href="https://github.com/bayesn/bayesn-td" target="_blank" rel="noopener noreferrer">BayeSN-TD</a></h3>
     <p class="lead">Time-delay inference for gravitationally lensed Type Ia supernovae</p>
 
-    <div class="callout-box callout-info mt-3">
-      <h6><i class="fas fa-lightbulb"></i>What makes BayeSN-TD unique?</h6>
-      <p>BayeSN-TD extends the BayeSN framework to model gravitationally lensed supernovae, enabling robust time-delay measurements for cosmology.
-         The accompanying paper is <a href="https://doi.org/10.1093/mnras/stag340">published in MNRAS</a>.</p>
-    </div>
+    <p>I developed BayeSN-TD, an adaptation of BayeSN for strongly lensed supernovae, and applied it to measure the local expansion rate of the universe using the lensed SN H0pe.</p>
+    <p>The accompanying paper is <a href="https://doi.org/10.1093/mnras/stag340">published in MNRAS</a>.</p>
 
     <div class="mt-3">
       <span class="badge bg-primary">Python</span>
@@ -84,7 +60,7 @@ hide_title: true
   <!-- Repositories -->
   {% if site.data.repositories.github_repos %}
   <div class="card mt-3 p-3">
-    <h3 class="card-title font-weight-medium"><i class="fab fa-github"></i> Repositories</h3>
+    <h3 class="card-title font-weight-medium">Repositories</h3>
     <div class="repositories d-flex flex-wrap justify-content-center align-items-stretch mt-3">
       {% for repo in site.data.repositories.github_repos %}
         {% include repository/repo.liquid repository=repo %}
@@ -119,7 +95,7 @@ hide_title: true
 
   <!-- Related Content -->
   <div class="related-content">
-    <h4><i class="fas fa-network-wired"></i>Explore Further</h4>
+    <h4>Explore Further</h4>
     <div class="row related-content-row">
       <div class="col-md-3">
         <a href="/research/" class="related-card card">

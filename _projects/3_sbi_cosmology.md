@@ -8,7 +8,7 @@ category: current
 ---
 
 <div class="intro-card">
-  <h2>Beyond Summary Statistics</h2>
+  <h2>Supernova Astrophysics and Cosmology</h2>
   <p>
     Current approaches to SN cosmology rely on multiple, disconnected steps. Simulations to characterise selection effects
     are based on a fixed fiducial model which is inferred separately to cosmological parameters. Astrophysical effects are
@@ -16,11 +16,7 @@ category: current
     forward model arising from astrophysical unknowns could bias our results.
   </p>
   <p>
-    SBI is a powerful new tool which allows us to perform Bayesian inference even in cases with complex effects,
-    such as survey selection bias, which cannot be expressed analytically and incorporated in a likelihood. SBI involves
-    forward-simulating data and learning the mapping from observations to parameters directly using neural networks. As long
-    as we can simulate realistic observed data from the model, we can perform inference. For LSST, I am interested
-    in the promise of SBI to deliver powerful new methods for cosmological inference for next-generation surveys.
+    I am interested in simulation-based inference (SBI) as a way to account for astrophysical uncertainty and survey selection bias in supernova cosmology. In SBI, neural networks learn complex relationships between model parameters and observations from realistic simulations, allowing us to include effects that are difficult to express in an analytic likelihood.
   </p>
   <p>
     I developed <a href="/software/">jax-SNANA</a> to accelerate supernova simulations, light curve fitting and cosmological
@@ -41,30 +37,14 @@ category: current
     </figure>
   </div>
 
-  <!-- Right Column: Key Findings Cards -->
   <div class="col-lg-6">
-    <h4 class="accent-section-heading">Key Advantages</h4>
-
-    <div class="finding-card mb-3">
-      <h6><i class="fas fa-layer-group"></i> Incorporate Complex Effects</h6>
-      <p>Enables Bayesian inference even with complex effects that cannot be expressed analytically, such as selection effects and contamination from other types of SN</p>
-    </div>
-
-    <div class="finding-card mb-3">
-      <h6><i class="fas fa-shield-alt"></i> Astrophysical Robustness</h6>
-      <p>Rather than relying on a fixed forward model for the population of SNe Ia to do cosmological inference, astrophysical unknowns can be marginalised over when inferring cosmological parameters</p>
-    </div>
-
-    <div class="finding-card mb-3">
-      <h6><i class="fas fa-tachometer-alt"></i> Scalable Inference</h6>
-      <p>SBI methods can allow marginalisation over latent SN parameters, reducing dimensionality and avoiding computationally-expensive light curve fitting</p>
-    </div>
+    <h4 class="accent-section-heading">Selection Effects and Astrophysical Uncertainty</h4>
+    <p>Magnitude limits mean that brighter supernovae are more likely to enter an observed sample. Realistic survey
+       simulations allow us to account for this selection and for contamination from other types of supernova.</p>
+    <p>I am interested in including astrophysical effects in the same model used for cosmological inference.
+       This allows uncertainty about the supernova population and host-galaxy dust to be propagated into
+       constraints on cosmological parameters.</p>
   </div>
-</div>
-
-<div class="callout-box mt-5">
-  <h6><i class="fas fa-lightbulb"></i> Future Potential</h6>
-    <p class="mb-0"><strong>LSST Cosmology:</strong> SBI provides a solution to perform robust and scalable cosmological inference using SNe Ia in the LSST era.</p>
 </div>
 
 <!-- Publications and Collaborators Section -->
@@ -73,7 +53,7 @@ category: current
   <div class="col-lg-8">
     <div class="cv">
       <div class="card">
-        <h3 class="card-title font-weight-medium"><i class="fas fa-file-alt"></i> Key Publications</h3>
+        <h3 class="card-title font-weight-medium">Key Publications</h3>
         <div class="publications">
           {% bibliography --group_by none --query @*[key=2026arXiv261019000G || key=2026arXiv260728725P || key=2026arXiv260311165B || key=2024MNRAS.530.3881K || key=2024arXiv240715923B] %}
         </div>
@@ -84,7 +64,7 @@ category: current
   <!-- Right Column: Collaborators (Narrower) -->
   <div class="col-lg-4">
     <div class="project-info-card">
-      <h5><i class="fas fa-users"></i> Key Collaborators</h5>
+      <h5>Key Collaborators</h5>
       <div class="collaborator-list">
         <div class="collaborator-item">
           <strong>Kaisey Mandel</strong>

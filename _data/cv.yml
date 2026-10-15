@@ -20,7 +20,7 @@
       description:
         - Developing next-generation SED model for fitting type Ia supernova light curves, BayeSN, using latest statistical inference methods
         - Analysing environmental-dependence of intrinsic properties of type Ia supernovae
-        - Co-convener of the Time Domain Working Group within the Dark Energy Science Collaboration
+        - Co-convener of the Time-Domain Working Group within the Dark Energy Science Collaboration
 
     - title: Postdoctoral Research Associate
       institution: Pembroke College, University of Cambridge
@@ -64,14 +64,15 @@
 
     - title: Leadership & Organisation
       items:
-        - Co-convener of the Time Domain Working Group in the Dark Energy Science Collaboration
-        - Organise colloquia at Institute of Astronomy as part of colloquium committee
+        - Co-convener of the Time-Domain Working Group in the Dark Energy Science Collaboration
+        - Chair of the Institute of Astronomy Colloquium Committee (2023-Present); awarded the IoA Service Award
+        - Member of the Institute of Astronomy Equity and Inclusion Working Group (2023-Present)
 
     - title: Scientific Communication
       items:
         - Invited speaker at national and international conferences
         - Several invited seminars
-        - Invited reviewer for The Astrophysical Journal
+        - Invited reviewer for The Astrophysical Journal and Publications of the Astronomical Society of the Pacific; awarded PASP Star Reviewer status
         - Experienced with scientific writing
 
 - title: Collaborations & Leadership
@@ -79,7 +80,9 @@
   contents:
     - title: Dark Energy Science Collaboration
       items:
-        - Co-convener of the Time Domain Working Group
+        - Co-convener of the Time-Domain Working Group
+        - Scientific Organising Committee, DESC DP2 Hack (University of Pittsburgh, September 2026)
+        - Scientific Organising Committee, DESC Collaboration Meeting (2026)
         - Organised July 2024 workshop in Stockholm
         - Leading project to incorporate BayeSN within current SN cosmology pipeline for LSST
 

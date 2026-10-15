@@ -13,13 +13,11 @@ category: current
     After applying typical standardisation methods, we find that SNe Ia in massive galaxies appear systematically brighter (~0.05-0.1 mag)
     than those in low-mass galaxies. Understanding this effect is vital for both supernova astrophysics and cosmology; learning about how the properties
     of SNe Ia are affected by their environment will help inform us about their progenitor stars, while proper treatment of this
-    dependence is vital to accurate distance estimation. There are two possible causes: either there are intrinsic differences
-    between SNe Ia in different environments, or there is one homogeneous population with apparent differences caused by differing impacts
-    of dust extinction in different types of galaxies.
+    dependence is vital to accurate distance estimation. Both intrinsic differences between SNe Ia and differences in dust extinction across host environments may contribute to this effect.
   </p>
   <p>
-    I have investigated this problem using <strong>BayeSN</strong>, a next-generation SED model for SNe Ia that leverages hierarchical Bayesian
-    inference to explicitly separate dust extinction from the intrinsic properties of SNe Ia. We can apply BayeSN to large samples of SNe Ia
+    I have investigated this problem using <strong>BayeSN</strong>, a next-generation hierarchical Bayesian SED model for SNe Ia that separates
+    dust extinction from the intrinsic properties of SNe Ia. We can apply BayeSN to large samples of SNe Ia
     to infer from data the relative contributions of these two effects.
   </p>
   <p>
@@ -45,19 +43,19 @@ category: current
     <h4 class="accent-section-heading">Key Findings</h4>
 
     <div class="finding-card mb-3">
-      <h6><i class="fas fa-atom"></i> Intrinsic SN Ia Differences</h6>
+      <h6>Intrinsic SN Ia Differences</h6>
       <p>While dust may play a role, SNe Ia in different types of galaxy do seem to show intrinsic differences, pointing
       to some progenitor differences</p>
     </div>
 
     <div class="finding-card mb-3">
-      <h6><i class="fas fa-chart-line"></i> Difference in i-band secondary maximum</h6>
+      <h6>Difference in i-band secondary maximum</h6>
       <p>Intrinsic differences are particularly strong <strong>(4.5σ difference)</strong> around i-band secondary
       maximum; understanding this may help explain what these progenitor differences are</p>
     </div>
 
     <div class="finding-card mb-3">
-      <h6><i class="fas fa-check-circle"></i> Validation on Simulations</h6>
+      <h6>Validation on Simulations</h6>
       <p>We apply BayeSN to simulations based on an alternative SED model, SALT, which incorporate dust and intrinsic
       differences, verifying that BayeSN is indeed able to distinguish these two effects separately</p>
     </div>
@@ -65,8 +63,8 @@ category: current
 </div>
 
 <div class="callout-box mt-5">
-  <h6><i class="fas fa-lightbulb"></i> Impact</h6>
-  <p><strong>Cosmology:</strong> Provides a path to reduce systematic uncertainty for LSST and beyond. BayeSN is being integrated into DESC cosmological analysis pipelines.</p>
+  <h6>Impact</h6>
+  <p><strong>Cosmology:</strong> Accounting for intrinsic differences and dust extinction across host environments helps us estimate supernova distances more accurately. BayeSN is being integrated into DESC cosmological analysis pipelines.</p>
   <p class="mb-0"><strong>Astrophysics:</strong> Evidence for distinct progenitor populations or environmental effects that affect explosion physics.</p>
 </div>
 
@@ -76,7 +74,7 @@ category: current
   <div class="col-lg-8">
     <div class="cv">
       <div class="card">
-        <h3 class="card-title font-weight-medium"><i class="fas fa-file-alt"></i> Relevant Publications</h3>
+        <h3 class="card-title font-weight-medium">Relevant Publications</h3>
         <div class="publications">
           {% bibliography --group_by none --query @*[key=2026arXiv260506799G || key=2026arXiv260619429G || key=2025MNRAS.542.2060G || key=2024MNRAS.531..953G] %}
         </div>
@@ -87,7 +85,7 @@ category: current
   <!-- Right Column: Collaborators (Narrower) -->
   <div class="col-lg-4">
     <div class="project-info-card">
-      <h5><i class="fas fa-users"></i> Key Collaborators</h5>
+      <h5>Key Collaborators</h5>
       <div class="collaborator-list">
         <div class="collaborator-item">
           <strong>Kaisey Mandel</strong>

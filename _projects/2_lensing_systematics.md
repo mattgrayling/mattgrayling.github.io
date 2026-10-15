@@ -41,18 +41,18 @@ category: current
     <h4 class="accent-section-heading">Key Results</h4>
 
     <div class="finding-card mb-3">
-      <h6><i class="fas fa-check-circle"></i> Validation on Simulations</h6>
+      <h6>Validation on Simulations</h6>
       <p>BayeSN-TD produces robust time-delay estimates with well-calibrated uncertainties, even when applied to simulations
       based on an alternative model</p>
     </div>
 
     <div class="finding-card mb-3">
-      <h6><i class="fas fa-clock"></i> Time Delay Estimates</h6>
+      <h6>Time Delay Estimates</h6>
       <p>Inferred time delays of <strong>$\Delta T_{BA}$ = $121.9^{+9.5}_{-7.5}$ days</strong> and <strong>$\Delta T_{BC} = 63.2^{+3.2}_{-3.3}$ days</strong> between the three images</p>
     </div>
 
     <div class="finding-card mb-3">
-      <h6><i class="fas fa-ruler-combined"></i> Hubble Constant Measurement</h6>
+      <h6>Hubble Constant Measurement</h6>
       <p>Measured H₀ = <strong>$69.3^{+12.6}_{-7.8}$ km/s/Mpc</strong> from SN H0pe, consistent with both CMB and distance ladder measurements</p>
     </div>
 
@@ -60,7 +60,7 @@ category: current
 </div>
 
 <div class="callout-box mt-5">
-  <h6><i class="fas fa-lightbulb"></i> Future Potential</h6>
+  <h6>Lensed Supernovae with JWST and LSST</h6>
   <p class="mb-0"><strong>SN H0pe:</strong> Further analysis of SN H0pe, and other lensed SNe discovered by JWST, will provide strong constraints on $H_0$.</p>
   <p><strong>Future Surveys:</strong> LSST will discover hundreds of lensed supernovae over 10 years, and  BayeSN-TD can play a valuable role in the analysis of these events.</p>
 </div>
@@ -71,7 +71,7 @@ category: current
   <div class="col-lg-8">
     <div class="cv">
       <div class="card">
-        <h3 class="card-title font-weight-medium"><i class="fas fa-file-alt"></i> Relevant Publications</h3>
+        <h3 class="card-title font-weight-medium">Relevant Publications</h3>
         <div class="publications">
           {% bibliography --group_by none --query @*[key=2025arXiv251011719G || key=2025arXiv251007637A] %}
         </div>
@@ -82,7 +82,7 @@ category: current
   <!-- Right Column: Collaborators (Narrower) -->
   <div class="col-lg-4">
     <div class="project-info-card">
-      <h5><i class="fas fa-users"></i> Key Collaborators</h5>
+      <h5>Key Collaborators</h5>
       <div class="collaborator-list">
         <div class="collaborator-item">
           <strong>Kaisey Mandel</strong>
