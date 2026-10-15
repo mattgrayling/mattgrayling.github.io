@@ -10,12 +10,12 @@
             {% endif %}
             {% if content.institution %}
               <p class="text-muted mb-0">
-                <i class="fa-solid fa-building-columns"></i> {{ content.institution }}
+                {{ content.institution }}
               </p>
             {% endif %}
             {% if content.department %}
               <p class="text-muted mb-0">
-                <i class="fa-regular fa-circle-dot"></i> {{ content.department }}
+                {{ content.department }}
               </p>
             {% endif %}
           </div>
@@ -27,7 +27,7 @@
         </div>
         {% if content.location %}
           <p class="text-muted small mb-2">
-            <i class="fa-solid fa-location-dot"></i> {{ content.location }}
+            {{ content.location }}
           </p>
         {% endif %}
         {% if content.maindescription %}

@@ -4,12 +4,12 @@
     <div class="cv-contact-details">
       {% if entry.location %}
         <span class="cv-contact-item">
-          <i class="fas fa-map-marker-alt"></i> {{ entry.location }}
+          {{ entry.location }}
         </span>
       {% endif %}
       {% if entry.email %}
         <span class="cv-contact-item">
-          <i class="fas fa-envelope"></i> <a href="mailto:{{ entry.email }}">{{ entry.email }}</a>
+          <a href="mailto:{{ entry.email }}">{{ entry.email }}</a>
         </span>
       {% endif %}
     </div>
@@ -17,7 +17,7 @@
 
   <div class="cv-about-actions">
     <button class="btn btn-primary btn-sm cv-pdf-button" data-pdf-url="{{ '/assets/pdf/KavliCV2025_Update.pdf' | relative_url }}" data-pdf-title="Matt Grayling - CV">
-      <i class="fa-solid fa-file-pdf"></i> View full CV
+      View full CV
     </button>
 
     {% if entry.socials %}

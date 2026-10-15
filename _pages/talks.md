@@ -8,7 +8,7 @@ hide_title: true
 ---
 
 <div class="cv">
-  <p class="lead">A timeline of invited seminars and conference presentations. <span class="badge bg-warning text-dark">Invited</span> talks are distinguished from <span class="badge bg-info text-dark">Contributed</span> talks.</p>
+  <p class="lead">A timeline of invited seminars and conference presentations.</p>
 
   <div class="timeline">
 

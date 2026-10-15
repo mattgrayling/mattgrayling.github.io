@@ -11,24 +11,28 @@ html[data-theme="dark"], :root {
 }
 body {
   background: #080d13;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 1.7;
   padding-bottom: 0;
 }
 body.fixed-top-nav { padding-top: 112px; }
-#star-background { opacity: .52; pointer-events: none; }
-.container { max-width: 1180px !important; }
+#star-background { opacity: .7; pointer-events: none; }
+.container { max-width: 1140px !important; }
 .site-main {
   margin: 0 auto !important;
-  padding: 60px 60px 48px;
-  background: rgba(16, 23, 29, .97);
+  padding: 52px 60px 48px;
+  // Let the sky show through the margins while keeping text on a quiet surface.
+  background: linear-gradient(to right,
+    rgba(16, 23, 29, .7), rgba(16, 23, 29, .92) 60px,
+    rgba(16, 23, 29, .92) calc(100% - 60px), rgba(16, 23, 29, .7));
   min-height: calc(100vh - 260px);
 }
-h1, h2, h3, h4, h5, h6 { color: #f1eee7; line-height: 1.3; }
+button, input, select, textarea { font-family: inherit; }
+h1, h2, h3, h4, h5, h6 { font-family: inherit; color: #f1eee7; line-height: 1.3; }
 h1, .post-header .post-title, .about-hero .post-title {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: inherit;
   font-weight: 400;
   letter-spacing: -.035em;
 }
@@ -70,16 +74,18 @@ a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-vis
   .navbar-social i { font-size: 21px; }
   .navbar-collapse { flex-basis: 100%; }
   .navbar-nav { width: 100%; margin-left: 0 !important; justify-content: space-between; }
-  .nav-link { padding: 13px 0 12px; font-size: 14px; font-weight: 400; color: #b7c0c6; border-bottom: 2px solid transparent; }
+  .nav-link { padding: 13px 0 12px; font-size: 15px; font-weight: 400; color: #b7c0c6; border-bottom: 2px solid transparent; }
   .nav-item.active > .nav-link { color: #f1eee7; border-color: #d7bc8d; background: transparent; }
   .nav-link:hover { color: #f0d8ad; }
   #search-toggle { padding: 0 3px; border: 0; }
 }
+// Keep the masthead alignment, without repeating the homepage name or adding a hidden tab stop.
+body[data-page="/"] #navbar .navbar-brand { visibility: hidden; }
 .post-header {
   margin: 0 0 42px;
   padding: 0 0 30px;
   border-bottom: 1px solid var(--global-divider-color);
-  .post-title { font-size: clamp(2.6rem, 4.6vw, 4rem); line-height: 1.12; margin: 0; max-width: 21ch; }
+  .post-title { font-size: clamp(2.25rem, 3.8vw, 3.25rem); line-height: 1.15; margin: 0; max-width: 26ch; }
   .post-description { color: #a6b1b8; font-size: 1.05rem; margin: 1rem 0 0; max-width: 66ch; }
 }
 .section-back { display: inline-block; margin-bottom: 20px; font-size: .85rem; }
@@ -125,7 +131,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-vis
 .about-hero {
   display: grid; grid-template-columns: minmax(0, 1fr) 240px; gap: 64px;
   align-items: start; margin-bottom: 56px;
-  .post-title { font-size: clamp(3.2rem, 5.6vw, 5rem); margin: -8px 0 18px; line-height: 1.08; }
+  .post-title { font-size: clamp(2.25rem, 3.6vw, 3rem); margin: -8px 0 18px; line-height: 1.12; }
   .desc { font-size: .93rem; line-height: 1.6; color: #a6b1b8; margin-bottom: 30px; max-width: 47ch; }
   .lead { font-size: 1.16rem; color: #d6dbdc; margin-bottom: 0; }
   .profile { width: auto; margin: 0; float: none; }
@@ -139,10 +145,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-vis
   > .cv > .row .card { border-top: 1px solid #7b725f; padding: 27px 0 !important; }
   .cv .card-title { font-size: 1.2rem; }
   .cv > .card { padding: 30px 0 !important; }
+  .cv > .card > .card-title { font-size: 1.35rem; }
   .row.mt-3 { margin-top: 0 !important; }
   p { font-size: .95rem; }
 }
-.about-page article > h2 { margin-top: 50px; margin-bottom: 24px; font-family: Georgia, serif; font-size: 2rem; font-weight: 400; }
+.about-page article > h2 { margin-top: 50px; margin-bottom: 24px; font-family: inherit; font-size: 1.35rem; font-weight: 500; }
 // Research overview: scientific images are the anchors, with room for titles.
 .section-heading { text-align: left; margin: 0 0 30px; text-transform: none; letter-spacing: 0; font-size: 1.5rem; }
 .projects > .row { display: block; margin: 0; }
@@ -152,7 +159,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-vis
   padding: 30px 0; border-top: 1px solid #364149;
   text-decoration: none !important; color: #d6dbdc;
   &:hover h2 { color: #e9c992; }
-  h2 { font-family: Georgia, serif; font-size: 2rem; font-weight: 400; letter-spacing: -.02em; margin: 0 0 15px; }
+  h2 { font-family: inherit; font-size: 1.65rem; font-weight: 500; letter-spacing: normal; margin: 0 0 15px; }
   p { color: #b9c3c9; font-size: 1rem; margin: 0; }
   figure { margin: 0; }
   img { width: 100%; height: 215px; object-fit: contain; border-radius: 0; }
@@ -209,9 +216,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-vis
 .publications .journal-badge { width: 66px; height: 44px; min-height: 0; border-radius: 2px; padding: 5px; filter: saturate(.6); }
 .publications .journal-logo-img { max-width: 100%; max-height: 100%; }
 .publications .title { font-size: 1rem; color: #e5e6e2; line-height: 1.5; font-weight: 500; }
-.publications .author, .publications .periodical { font-size: .85rem; color: #a6b1b8; line-height: 1.6; }
+.publications .author, .publications .periodical { font-size: .95rem; color: #a6b1b8; line-height: 1.65; }
 .publications h2.year { color: #d7bc8d; border: 0; font-size: 1.1rem; margin: 35px 0 0; }
-.publications .links .btn { font-size: .72rem !important; padding: 5px 8px !important; min-width: 0; }
+.publications .links .btn { font-size: .85rem !important; padding: 5px 8px !important; min-width: 0; }
 .publications .more-authors { border: 0; border-bottom: 1px dotted #a6b1b8; padding: 0; background: transparent; font: inherit; color: inherit; text-align: left; }
 #bibsearch { background: #18232b; color: #e5e6e2; border: 1px solid #66727a; border-radius: 2px; padding: 12px 15px; width: 100%; max-width: 540px; font-size: 1rem; }
 #bibsearch::placeholder { color: #b9c3c9; }
@@ -261,7 +268,7 @@ blockquote { background: transparent; border-left: 1px solid #80755f; color: #c3
 .cv-section { scroll-margin-top: 135px; margin-bottom: 36px; }
 .cv-section .card { border-top: 1px solid #364149; padding: 28px 0 !important; }
 .cv-section:first-child .card { border: 0; padding-top: 0 !important; }
-.cv-name { font-family: Georgia, serif; font-weight: 400; font-size: 2rem; }
+.cv-name { font-family: inherit; font-weight: 500; font-size: 2rem; }
 .cv-contact-details { font-size: .85rem; }
 .cv-about-header { align-items: start; }
 .cv-about-actions { gap: 1rem; flex-wrap: wrap; }
@@ -314,16 +321,16 @@ footer.sticky-bottom {
 }
 @media (max-width: 767.98px) {
   body { font-size: 16px; }
-  .site-main { padding: 35px 24px; }
+  .site-main { padding: 35px 24px; background: rgba(16, 23, 29, .92); }
   .post-header { margin-bottom: 30px; padding-bottom: 25px; }
-  .post-header .post-title { font-size: 2.6rem; }
+  .post-header .post-title { font-size: 2.25rem; }
   .about-hero { grid-template-columns: 1fr; gap: 28px; margin-bottom: 32px; }
-  .about-hero .post-title { font-size: 3.2rem; }
+  .about-hero .post-title { font-size: 2.25rem; }
   .about-hero .desc { margin-bottom: 22px; }
   .about-hero .lead { font-size: 1.08rem; }
   .about-hero .profile { display: flex; align-items: center; gap: 22px; }
   .about-hero .profile figure { width: 120px; flex-shrink: 0; }
-  .about-hero .more-info { padding: 0; font-size: .75rem; }
+  .about-hero .more-info { padding: 0; font-size: .85rem; }
   .about-hero .more-info p { margin: 0; }
   .about-work > .cv > .row > div { padding-right: 15px; margin-bottom: 0 !important; }
   .about-work > .cv > .row .card { padding-bottom: 8px !important; }
@@ -334,8 +341,8 @@ footer.sticky-bottom {
   .intro-card { margin-bottom: 35px; }
   .publications .abbr { flex-basis: 48px; max-width: 48px; padding-right: 13px; }
   .publications .journal-badge { width: 35px; height: 30px; padding: 2px; }
-  .publications .title { font-size: .95rem; }
-  .publications .author, .publications .periodical { font-size: .8rem; }
+  .publications .title { font-size: 1rem; }
+  .publications .author, .publications .periodical { font-size: .9rem; }
   body[data-page="/talks/"] .timeline-content .card-body { display: flex; flex-wrap: wrap; column-gap: 0; }
   body[data-page="/talks/"] .timeline-content .card-body > h6 { order: -1; flex-basis: 100%; }
   body[data-page="/talks/"] .timeline-content .card-body > .d-flex, body[data-page="/talks/"] .timeline-content .card-body > p { flex-basis: 100%; }
@@ -405,7 +412,7 @@ body[data-page="/research/"] article > .cv > .card:first-child > ul {
 .section-heading { color: #f1eee7; }
 body[data-page="/software/"] article > .cv > .card { display: grid; grid-template-columns: 200px minmax(0,1fr); column-gap: 40px; }
 body[data-page="/software/"] article > .cv > .card > * { grid-column: 2; }
-body[data-page="/software/"] article > .cv > .card > .card-title { grid-column: 1; grid-row: 1 / 8; font-family: Georgia,serif; font-size: 1.7rem; font-weight: 400; }
+body[data-page="/software/"] article > .cv > .card > .card-title { grid-column: 1; grid-row: 1 / 8; font-family: inherit; font-size: 1.35rem; font-weight: 500; }
 body[data-page="/software/"] article > .cv > .card .lead { font-size: 1.1rem; }
 .repositories { display: block !important; margin-top: 0 !important; }
 .repositories .repo { width: 100%; max-width: 100%; padding: 15px 0 !important; border-bottom: 1px solid #364149; }
