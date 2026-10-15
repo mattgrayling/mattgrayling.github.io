@@ -2,6 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Only initialize if particles container exists
   if (document.getElementById('star-background')) {
+    const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
     // Seeded random number generator for consistent star positions across pages
     function seededRandom(seed) {
       var x = Math.sin(seed++) * 10000;
@@ -59,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
           enable: false  // No connecting lines - unrealistic
         },
         move: {
-          enable: true,
+          enable: !motionPreference.matches,
           speed: 0.4,  // Subtle but noticeable drift
           direction: 'none',  // Random directions
           random: true,  // Randomize movement
@@ -85,6 +86,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Restore original Math.random after particles are initialized
     Math.random = originalRandom;
+
+    // Keep the existing stars, but stop/resume their animation when the OS
+    // preference changes. Cancel the pending frame to avoid duplicate loops.
+    const starField = window.pJSDom.find(function(instance) {
+      return instance.pJS.canvas.el.parentNode.id === 'star-background';
+    }).pJS;
+    motionPreference.addEventListener('change', function(event) {
+      starField.particles.move.enable = !event.matches;
+      window.cancelRequestAnimFrame(starField.fn.drawAnimFrame);
+      starField.fn.vendors.draw();
+    });
 
     // GALAXIES TEMPORARILY DISABLED - Uncomment to re-enable
     /*
