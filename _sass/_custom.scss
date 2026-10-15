@@ -548,8 +548,8 @@ html {
   box-sizing: border-box; // Ensures padding is included in the height/width
 
   // Sizing and Layout properties
-  width: 400px;
-  min-width: 400px;
+  width: 100%;
+  min-width: 0;
   // REMOVED: Fixed height - let content dictate spacing naturally
 
   // Flexbox for vertical layout
@@ -1702,4 +1702,34 @@ html[data-theme="light"] .repo-card-coming-soon {
 // This overrides utility classes like .text-primary for a consistent look.
 .cv .card .card-title i {
   color: var(--cv-accent-light) !important;
+}
+
+// Let both repository cards fit small screens while retaining their desktop size.
+.repositories .repo {
+  width: 416px;
+  min-width: 0;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .repositories .repo {
+    max-width: 50%;
+  }
+}
+
+.related-content-row > [class*="col-"] {
+  margin-bottom: 1rem;
+}
+
+#pdf-modal .modal-content {
+  background-color: var(--global-bg-color);
+  color: var(--global-text-color);
+}
+
+#pdf-modal .modal-header {
+  border-bottom-color: var(--global-divider-color);
+}
+
+#pdf-modal .close {
+  opacity: 1;
 }

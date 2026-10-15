@@ -54,10 +54,16 @@
     {% include footer.liquid %}
 
     <!-- PDF Viewer Modal -->
-    <div class="modal fade" id="pdf-modal" tabindex="-1" aria-labelledby="pdf-modal-label" aria-hidden="true">
-      <div class="modal-dialog modal-xl modal-fullscreen-lg-down">
+    <div class="modal fade" id="pdf-modal" tabindex="-1" aria-labelledby="pdf-modal-label" aria-hidden="true" data-viewer-url="{{ '/assets/pdfjs/web/viewer.html' | relative_url }}">
+      <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
-          <div class="modal-body p-0" style="height: 90vh;">
+          <div class="modal-header">
+            <h2 class="modal-title h5" id="pdf-modal-label">Slides</h2>
+            <button type="button" class="close text-reset" data-dismiss="modal" aria-label="Close slides">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body p-0" style="height: 75vh;">
             <iframe id="pdf-iframe" title="PDF Viewer" width="100%" height="100%" style="border: none;"></iframe>
           </div>
         </div>

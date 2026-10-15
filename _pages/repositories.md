@@ -51,7 +51,7 @@ hide_title: true
 
   <!-- BayeSN-TD Card -->
   <div class="card mt-3 p-3">
-    <h3 class="card-title font-weight-medium"><i class="fab fa-python"></i> BayeSN-TD <span class="badge bg-warning text-dark ms-2">Coming Soon</span></h3>
+    <h3 class="card-title font-weight-medium"><i class="fab fa-python"></i> BayeSN-TD <span class="badge bg-warning text-dark ml-2">Coming Soon</span></h3>
     <p class="lead">Time-delay inference for gravitationally lensed Type Ia supernovae</p>
 
     <div class="callout-box callout-warning mt-3">
@@ -72,7 +72,7 @@ hide_title: true
   {% if site.data.repositories.github_repos %}
   <div class="card mt-3 p-3">
     <h3 class="card-title font-weight-medium"><i class="fab fa-github"></i> Repositories</h3>
-    <div class="repositories d-flex flex-wrap gap-3 justify-content-center align-items-stretch mt-3">
+    <div class="repositories d-flex flex-wrap justify-content-center align-items-stretch mt-3">
       {% for repo in site.data.repositories.github_repos %}
         {% include repository/repo.liquid repository=repo %}
       {% endfor %}
@@ -120,7 +120,7 @@ hide_title: true
   <!-- Related Content -->
   <div class="related-content">
     <h4><i class="fas fa-network-wired"></i>Explore Further</h4>
-    <div class="row g-3">
+    <div class="row related-content-row">
       <div class="col-md-3">
         <a href="/research/" class="related-card card">
           <div class="card-body">

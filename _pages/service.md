@@ -138,7 +138,7 @@ hide_title: true
       </div>
       <hr class="mt-4">
       <h5>Educational Outreach</h5>
-      <p class="ms-1 mt-2"><strong>Annual Outreach Events</strong><br>
+      <p class="ml-1 mt-2"><strong>Annual Outreach Events</strong><br>
       <small><em>University of Southampton (2018-2020)</em><br>Volunteered at annual outreach events, teaching children about the life cycles of stars and supernovae.</small></p>
     </div>
   </div>
@@ -146,7 +146,7 @@ hide_title: true
   <!-- Related Content -->
   <div class="related-content">
     <h4><i class="fas fa-network-wired"></i>Explore Further</h4>
-    <div class="row g-3">
+    <div class="row related-content-row">
       <div class="col-md-3">
         <a href="/research/" class="related-card card">
           <div class="card-body">

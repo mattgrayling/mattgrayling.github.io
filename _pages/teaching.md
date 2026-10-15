@@ -18,8 +18,8 @@ hide_title: true
         <p class="h5 font-weight-normal mb-1">
           <strong>Benjamin Boyd</strong> (PhD, Second Supervisor, 2022-Present)
         </p>
-        <blockquote class="ms-4">
-          <p class="mb-1 fst-italic">Accounting for Selection Effects in Supernova Cosmology with Simulation-Based Inference</p>
+        <blockquote class="ml-4">
+          <p class="mb-1 font-italic">Accounting for Selection Effects in Supernova Cosmology with Simulation-Based Inference</p>
           <p class="small text-muted">Developing methods to account for survey selection biases using hierarchical Bayesian modeling and simulation-based inference.</p>
         </blockquote>
       </div>
@@ -29,8 +29,8 @@ hide_title: true
         <p class="h5 font-weight-normal mb-1">
           <strong>Aidan Reilly</strong> (Master's, Supervisor, Oct 2024-Aug 2025)
         </p>
-        <blockquote class="ms-4">
-          <p class="mb-1 fst-italic">Understanding the reddest type Ia supernovae with hierarchical Bayesian modelling</p>
+        <blockquote class="ml-4">
+          <p class="mb-1 font-italic">Understanding the reddest type Ia supernovae with hierarchical Bayesian modelling</p>
           <p class="small text-muted">Investigating highly dust-reddened SNe Ia using BayeSN and the impact of different treatments of dust extinction.</p>
         </blockquote>
       </div>
@@ -39,8 +39,8 @@ hide_title: true
         <p class="h5 font-weight-normal mb-1">
           <strong>Dougal Wentworth</strong> (Master's, Co-supervisor, Oct 2024-Jun 2025)
         </p>
-        <blockquote class="ms-4">
-          <p class="mb-1 fst-italic">Constraining the 3D shape of early galaxies with JWST</p>
+        <blockquote class="ml-4">
+          <p class="mb-1 font-italic">Constraining the 3D shape of early galaxies with JWST</p>
           <p class="small text-muted">Using JWST observations to study morphology of populations of high-redshift galaxies and infer 3D shapes from projected images.</p>
         </blockquote>
       </div>
@@ -142,7 +142,7 @@ hide_title: true
   <!-- Related Content -->
   <div class="related-content">
     <h4><i class="fas fa-network-wired"></i>Explore Further</h4>
-    <div class="row g-3">
+    <div class="row related-content-row">
       <div class="col-md-3">
         <a href="/research/" class="related-card card">
           <div class="card-body">

@@ -1,36 +1,29 @@
-// PDF Viewer Modal Handler
+// Bootstrap 4 PDF viewer: populate on open and release the iframe on close.
 document.addEventListener('DOMContentLoaded', function () {
   var pdfModalElement = document.getElementById('pdf-modal');
-  if (pdfModalElement) {
-    // Initialize Bootstrap modal
-    var pdfModal = new bootstrap.Modal(pdfModalElement);
+  if (!pdfModalElement) return;
 
-    // Find all "View Slides" buttons and add click handlers
-    var viewButtons = document.querySelectorAll('[data-pdf-url]');
-    viewButtons.forEach(function(button) {
-      button.addEventListener('click', function(e) {
-        e.preventDefault();
+  var iframe = pdfModalElement.querySelector('#pdf-iframe');
+  var title = pdfModalElement.querySelector('#pdf-modal-label');
+  var pdfModal = $(pdfModalElement);
 
-        // Extract info from data-* attributes
-        var pdfURL = button.getAttribute('data-pdf-url');
-        var pdfTitle = button.getAttribute('data-pdf-title');
-
-        // Construct the PDF.js viewer URL
-        var viewerURL = '/assets/pdfjs/web/viewer.html?file=' + encodeURIComponent(pdfURL);
-
-        // Update the iframe
-        var iframe = pdfModalElement.querySelector('#pdf-iframe');
-        iframe.src = viewerURL;
-
-        // Show the modal
-        pdfModal.show();
-      });
+  pdfModal.on('show.bs.modal', function (event) {
+    var button = event.relatedTarget;
+    var pdfURL = button && button.getAttribute('data-pdf-url');
+    if (!pdfURL) {
+      event.preventDefault();
+      return;
+    }
+    var pdfTitle = button.getAttribute('data-pdf-title') || 'Slides';
+    title.textContent = pdfTitle;
+    iframe.title = pdfTitle;
+    // Wait for the modal transition before PDF.js measures its viewport.
+    pdfModal.one('shown.bs.modal', function () {
+      iframe.src = pdfModalElement.getAttribute('data-viewer-url') + '?file=' + encodeURIComponent(pdfURL);
     });
+  });
 
-    // Clear the iframe src when modal is closed to stop the PDF from running in the background
-    pdfModalElement.addEventListener('hidden.bs.modal', function () {
-      var iframe = pdfModalElement.querySelector('#pdf-iframe');
-      iframe.src = 'about:blank';
-    });
-  }
+  pdfModal.on('hidden.bs.modal', function () {
+    iframe.src = 'about:blank';
+  });
 });

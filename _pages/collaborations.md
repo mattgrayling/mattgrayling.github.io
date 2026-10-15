@@ -61,7 +61,7 @@ hide_title: true
   <!-- Related Content -->
   <div class="related-content">
     <h4><i class="fas fa-network-wired"></i>Explore Further</h4>
-    <div class="row g-3">
+    <div class="row related-content-row">
       <div class="col-md-3">
         <a href="/research/" class="related-card card">
           <div class="card-body">

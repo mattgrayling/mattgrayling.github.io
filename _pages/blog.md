@@ -1,4 +1,5 @@
 ---
+published: false
 layout: default
 permalink: /blog/
 title: blog
@@ -67,7 +68,7 @@ pagination:
 <div class="col mb-4">
 <a href="{{ post.url | relative_url }}">
 <div class="card hoverable">
-<div class="row g-0">
+<div class="row no-gutters">
 <div class="col-md-12">
 <div class="card-body">
 <div class="float-right">

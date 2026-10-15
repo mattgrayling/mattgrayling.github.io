@@ -31,50 +31,18 @@ nav_order: 3
     </div>
   </div>
 
-  <!-- 2025 -->
+  <!-- Coauthored publications, automatically grouped by year -->
   <div class="card mt-3">
-    <h3 class="card-title font-weight-medium"><i class="fas fa-calendar-alt"></i> 2025</h3>
+    <h2 class="card-title h3 font-weight-medium">Coauthored Publications</h2>
     <div class="publications">
-      {% bibliography --group_by none --query @*[author~=and.*Grayling && year=2025] %}
-    </div>
-  </div>
-
-  <!-- 2024 -->
-  <div class="card mt-3">
-    <h3 class="card-title font-weight-medium"><i class="fas fa-calendar-alt"></i> 2024</h3>
-    <div class="publications">
-      {% bibliography --group_by none --query @*[author~=and.*Grayling && year=2024] %}
-    </div>
-  </div>
-
-  <!-- 2023 -->
-  <div class="card mt-3">
-    <h3 class="card-title font-weight-medium"><i class="fas fa-calendar-alt"></i> 2023</h3>
-    <div class="publications">
-      {% bibliography --group_by none --query @*[author~=and.*Grayling && year=2023] %}
-    </div>
-  </div>
-
-  <!-- 2021 -->
-  <div class="card mt-3">
-    <h3 class="card-title font-weight-medium"><i class="fas fa-calendar-alt"></i> 2021</h3>
-    <div class="publications">
-      {% bibliography --group_by none --query @*[author~=and.*Grayling && year=2021] %}
-    </div>
-  </div>
-
-  <!-- 2020 -->
-  <div class="card mt-3">
-    <h3 class="card-title font-weight-medium"><i class="fas fa-calendar-alt"></i> 2020</h3>
-    <div class="publications">
-      {% bibliography --group_by none --query @*[author~=and.*Grayling && year=2020] %}
+      {% bibliography --group_by year --group_order descending --query @*[author~=and.*Grayling] %}
     </div>
   </div>
 
   <!-- Related Content -->
   <div class="related-content">
     <h4><i class="fas fa-network-wired"></i>Explore Further</h4>
-    <div class="row g-3">
+    <div class="row related-content-row">
       <div class="col-md-3">
         <a href="/research/" class="related-card card">
           <div class="card-body">
