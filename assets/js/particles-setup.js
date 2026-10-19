@@ -1,8 +1,8 @@
 // Realistic star field background setup
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function () {
   // Only initialize if particles container exists
-  if (document.getElementById('star-background')) {
-    const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (document.getElementById("star-background")) {
+    const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
     // Seeded random number generator for consistent star positions across pages
     function seededRandom(seed) {
       var x = Math.sin(seed++) * 10000;
@@ -11,77 +11,77 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Use time-based seed so stars are at the "correct" position for current time
     // This makes motion continuous across page loads
-    var baseTimestamp = 1700000000000;  // Fixed reference point (Nov 2023)
+    var baseTimestamp = 1700000000000; // Fixed reference point (Nov 2023)
     var timeElapsed = Date.now() - baseTimestamp;
-    var timeOffset = Math.floor(timeElapsed / 50000);  // Slow evolution (50 seconds per seed increment)
-    var seed = 42 + timeOffset;  // Base seed + time offset
+    var timeOffset = Math.floor(timeElapsed / 50000); // Slow evolution (50 seconds per seed increment)
+    var seed = 42 + timeOffset; // Base seed + time offset
     var originalRandom = Math.random;
 
     // Temporarily override Math.random with seeded version
-    Math.random = function() {
+    Math.random = function () {
       seed++;
       return seededRandom(seed);
     };
 
-    particlesJS('star-background', {
+    particlesJS("star-background", {
       particles: {
         number: {
           value: 200,
           density: {
             enable: true,
-            value_area: 800
-          }
+            value_area: 800,
+          },
         },
         color: {
-          value: ['#FFFFFF', '#F5E5A1', '#A1B8F5']  // White, warm white, blue-white (like real stars)
+          value: ["#FFFFFF", "#F5E5A1", "#A1B8F5"], // White, warm white, blue-white (like real stars)
         },
         shape: {
-          type: 'circle',
+          type: "circle",
           stroke: {
             width: 0,
-            color: '#000000'
-          }
+            color: "#000000",
+          },
         },
         opacity: {
           value: 0.8,
-          random: true,  // Different brightness levels
+          random: true, // Different brightness levels
           anim: {
-            enable: false  // No twinkling
-          }
+            enable: false, // No twinkling
+          },
         },
         size: {
           value: 1.5,
-          random: true,  // Variable star sizes
+          random: true, // Variable star sizes
           anim: {
-            enable: false  // No size animation for realism
-          }
+            enable: false, // No size animation for realism
+          },
         },
         line_linked: {
-          enable: false  // No connecting lines - unrealistic
+          enable: false, // No connecting lines - unrealistic
         },
         move: {
           enable: !motionPreference.matches,
-          speed: 0.4,  // Subtle but noticeable drift
-          direction: 'none',  // Random directions
-          random: true,  // Randomize movement
-          straight: false,  // Curved, natural paths
-          out_mode: 'out',
-          bounce: false
-        }
+          speed: 0.4, // Subtle but noticeable drift
+          direction: "none", // Random directions
+          random: true, // Randomize movement
+          straight: false, // Curved, natural paths
+          out_mode: "out",
+          bounce: false,
+        },
       },
       interactivity: {
-        detect_on: 'canvas',
+        detect_on: "canvas",
         events: {
           onhover: {
-            enable: false  // No interaction
+            enable: false, // No interaction
           },
           onclick: {
-            enable: false  // No interaction
+            enable: false, // No interaction
           },
-          resize: true
-        }
+          resize: true,
+        },
       },
-      retina_detect: true
+      retina_detect: true,
     });
 
     // Restore original Math.random after particles are initialized
@@ -89,10 +89,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Keep the existing stars, but stop/resume their animation when the OS
     // preference changes. Cancel the pending frame to avoid duplicate loops.
-    const starField = window.pJSDom.find(function(instance) {
-      return instance.pJS.canvas.el.parentNode.id === 'star-background';
+    const starField = window.pJSDom.find(function (instance) {
+      return instance.pJS.canvas.el.parentNode.id === "star-background";
     }).pJS;
-    motionPreference.addEventListener('change', function(event) {
+    motionPreference.addEventListener("change", function (event) {
       starField.particles.move.enable = !event.matches;
       window.cancelRequestAnimFrame(starField.fn.drawAnimFrame);
       starField.fn.vendors.draw();

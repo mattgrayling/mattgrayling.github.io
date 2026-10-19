@@ -182,14 +182,16 @@ a:not(.btn):not(.badge):not(.nav-link) {
       border: 1px solid rgba(var(--cv-accent-light-rgb), 0.3);
     }
 
-    .items, .subitems {
+    .items,
+    .subitems {
       color: var(--cv-secondary-text);
 
       li {
         color: var(--cv-secondary-text);
       }
 
-      .item, .subitem {
+      .item,
+      .subitem {
         color: var(--cv-secondary-text);
       }
     }
@@ -240,7 +242,8 @@ a:not(.btn):not(.badge):not(.nav-link) {
   margin-bottom: 1.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 
-  h5, h6 {
+  h5,
+  h6 {
     color: var(--global-theme-color);
     font-weight: 600;
     margin-bottom: 0.75rem;
@@ -258,7 +261,8 @@ a:not(.btn):not(.badge):not(.nav-link) {
     background-color: rgba(23, 162, 184, 0.05);
     border-left-color: #17a2b8;
 
-    h5, h6 {
+    h5,
+    h6 {
       color: #17a2b8;
     }
   }
@@ -267,7 +271,8 @@ a:not(.btn):not(.badge):not(.nav-link) {
     background-color: rgba(255, 193, 7, 0.05);
     border-left-color: #ffc107;
 
-    h5, h6 {
+    h5,
+    h6 {
       color: #c79100;
     }
   }
@@ -420,8 +425,8 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(5, 5, 15);  // Very dark, nearly black (like night sky)
-  z-index: -1;  // Behind all content
+  background-color: rgb(5, 5, 15); // Very dark, nearly black (like night sky)
+  z-index: -1; // Behind all content
 }
 
 // Supernova explosion animation
@@ -445,9 +450,10 @@ html {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #FFFFFF;
-  box-shadow: 0 0 6px 2px rgba(255, 255, 255, 1),
-              0 0 12px 4px rgba(255, 255, 255, 0.8);
+  background: #ffffff;
+  box-shadow:
+    0 0 6px 2px rgba(255, 255, 255, 1),
+    0 0 12px 4px rgba(255, 255, 255, 0.8);
   pointer-events: none;
   animation: supernova 2.5s ease-out forwards;
   z-index: 10;
@@ -910,7 +916,7 @@ html[data-theme="light"] .repo-card-coming-soon {
   padding-left: 0;
 
   // For sections with 3 or fewer items, limit max width
-  &:has(li:nth-last-child(-n+3):first-child) {
+  &:has(li:nth-last-child(-n + 3):first-child) {
     grid-template-columns: repeat(auto-fill, minmax(320px, 400px));
   }
 }
@@ -979,7 +985,7 @@ html[data-theme="light"] .repo-card-coming-soon {
 
   // Vertical connecting line for visual interest
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 3px;
     top: 0.5rem;
@@ -1000,7 +1006,7 @@ html[data-theme="light"] .repo-card-coming-soon {
 
     // The custom bullet point
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       left: -0.25rem;
       top: 0.6em;
@@ -1047,7 +1053,7 @@ html[data-theme="light"] .repo-card-coming-soon {
 
   // Custom bullet for simple list items
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 1em;
@@ -1144,7 +1150,7 @@ html[data-theme="light"] .repo-card-coming-soon {
 
       // Add custom accent-colored bullet
       &::before {
-        content: '\f111'; // fa-circle icon
+        content: "\f111"; // fa-circle icon
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
         font-size: 8px;
@@ -1180,7 +1186,8 @@ html[data-theme="light"] .repo-card-coming-soon {
   margin-bottom: 2rem;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
-  h5, h6 {
+  h5,
+  h6 {
     color: #7eb3b0;
     margin-top: 0;
     font-size: 1.1rem;
@@ -1225,7 +1232,7 @@ html[data-theme="light"] .repo-card-coming-soon {
   margin-right: 0;
 
   // 2. Target the columns ONLY within this specific row.
-  > [class*='col-'] {
+  > [class*="col-"] {
     // 3. Keep the INNER gutter for spacing between cards...
     // The first column keeps its right padding, the last column keeps its left padding.
     // Bootstrap default is 15px, so we use 7.5px on each side.
@@ -1234,11 +1241,11 @@ html[data-theme="light"] .repo-card-coming-soon {
   }
 
   // 4. ...but REMOVE the OUTER padding to achieve perfect edge alignment.
-  > [class*='col-']:first-child {
+  > [class*="col-"]:first-child {
     padding-left: 0;
   }
 
-  > [class*='col-']:last-child {
+  > [class*="col-"]:last-child {
     padding-right: 0;
   }
 
@@ -1300,18 +1307,17 @@ html[data-theme="light"] .repo-card-coming-soon {
     display: inline;
 
     br {
-      content: ' ';
+      content: " ";
 
       &::after {
-        content: ', ';
+        content: ", ";
       }
 
       &:last-of-type::after {
-        content: '';
+        content: "";
       }
     }
   }
-
 }
 
 /* --- Part 3: Fix spacing issues --- */

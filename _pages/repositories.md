@@ -40,6 +40,7 @@ hide_title: true
       <span class="badge bg-secondary">NumPyro</span>
       <span class="badge bg-success text-dark">GPU</span>
     </div>
+
   </div>
 
   <!-- BayeSN-TD Card -->
@@ -55,10 +56,13 @@ hide_title: true
       <span class="badge bg-info text-dark">JAX</span>
       <span class="badge bg-secondary">NumPyro</span>
     </div>
+
   </div>
 
   <!-- Repositories -->
-  {% if site.data.repositories.github_repos %}
+
+{% if site.data.repositories.github_repos %}
+
   <div class="card mt-3 p-3">
     <h3 class="card-title font-weight-medium">Repositories</h3>
     <div class="repositories d-flex flex-wrap justify-content-center align-items-stretch mt-3">
@@ -74,6 +78,7 @@ hide_title: true
         <span class="repo-language">Python</span>
       </div>
     </div>
+
   </div>
   {% endif %}
 

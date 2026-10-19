@@ -28,6 +28,7 @@ hide_title: true
       <p class="mt-3"><strong>Equity and Inclusion Working Group</strong> (IoA Cambridge, 2023-Present)<br>
       <small>Member, helping organise themed events for a variety of cultural celebrations.</small></p>
     </div>
+
   </div>
 
   <!-- Peer Review -->

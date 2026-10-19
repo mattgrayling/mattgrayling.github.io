@@ -1,7 +1,9 @@
 <div class="col research-entry">
   <a class="research-link" href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
     {% if project.img %}
-      <div class="research-image">{% include figure.liquid loading="lazy" path=project.img sizes="(max-width: 767px) 90vw, 420px" alt=project.title class="img-fluid" %}</div>
+      <div class="research-image">
+        {% include figure.liquid loading="lazy" path=project.img sizes="(max-width: 767px) 90vw, 420px" alt=project.title class="img-fluid" %}
+      </div>
     {% endif %}
     <div class="research-description">
       <h2>{{ project.title }}</h2>
