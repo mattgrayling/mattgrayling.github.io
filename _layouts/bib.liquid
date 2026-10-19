@@ -6,7 +6,7 @@
       {%- if entry.abbr -%}
         {%- if site.data.venues[entry.abbr] -%}
           {%- comment -%} Display custom journal badge {%- endcomment -%}
-          {% assign venue_color = site.data.venues[entry.abbr].color | default: "#333" %}
+          {% assign venue_color = site.data.venues[entry.abbr].color | default: '#333' %}
           {% if site.data.venues[entry.abbr].logo %}
             {%- comment -%} Use logo image if defined {%- endcomment -%}
             <div class="journal-badge-container" style="background-color: transparent;">
@@ -126,9 +126,14 @@
         {%- endfor -%}
         {%- assign more_authors_show = more_authors_show | regex_replace: '([*∗†‡§¶‖&^]+)', '<sup>\1</sup>' -%}
         , and
-        <button type="button" class="more-authors" aria-expanded="false"
-          data-collapsed="{{ more_authors_hide | escape }}" data-expanded="{{ more_authors_show | escape }}"
-          onclick="const expanded = this.getAttribute('aria-expanded') === 'true'; this.innerHTML = expanded ? this.dataset.collapsed : this.dataset.expanded; this.setAttribute('aria-expanded', String(!expanded));">
+        <button
+          type="button"
+          class="more-authors"
+          aria-expanded="false"
+          data-collapsed="{{ more_authors_hide | escape }}"
+          data-expanded="{{ more_authors_show | escape }}"
+          onclick="const expanded = this.getAttribute('aria-expanded') === 'true'; this.innerHTML = expanded ? this.dataset.collapsed : this.dataset.expanded; this.setAttribute('aria-expanded', String(!expanded));"
+        >
           {{- more_authors_hide -}}
         </button>
       {% endif %}
@@ -215,7 +220,9 @@
         {% if entry.pdf contains '://' %}
           <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0 pdf-link" role="button"><i class="fas fa-file-pdf fa-fw"></i> PDF</a>
         {% else %}
-          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0 pdf-link" role="button"><i class="fas fa-file-pdf fa-fw"></i> PDF</a>
+          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0 pdf-link" role="button"
+            ><i class="fas fa-file-pdf fa-fw"></i> PDF</a
+          >
         {% endif %}
       {% endif %}
       {% if entry.supp %}
@@ -358,7 +365,7 @@
       <div class="bibtex hidden">
         {% highlight bibtex %}
         {{- entry.bibtex | hideCustomBibtex -}}
-        {% endhighlight %}
+      {% endhighlight %}
       </div>
     {% endif %}
 

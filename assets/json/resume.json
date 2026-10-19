@@ -40,9 +40,7 @@
       "startDate": "2024-10",
       "endDate": "Present",
       "summary": "Conducting independent research in supernova cosmology.",
-      "highlights": [
-        "Supervising undergraduate students in Part IA Physics"
-      ]
+      "highlights": ["Supervising undergraduate students in Part IA Physics"]
     },
     {
       "name": "Institute of Astronomy / Kavli Institute for Cosmology, University of Cambridge",
@@ -87,10 +85,7 @@
       "endDate": "2018",
       "score": "",
       "courses": [],
-      "highlights": [
-        "MSci Thesis: Effect of Environment on Galaxy Properties in Intermediate Redshift Clusters",
-        "Supervisor: Dr. Dave Clements"
-      ]
+      "highlights": ["MSci Thesis: Effect of Environment on Galaxy Properties in Intermediate Redshift Clusters", "Supervisor: Dr. Dave Clements"]
     }
   ],
   "awards": [
@@ -121,15 +116,7 @@
       "name": "Programming & Software Development",
       "level": "Expert",
       "icon": "fa-solid fa-code",
-      "keywords": [
-        "Python",
-        "JAX",
-        "NumPyro",
-        "NumPy/SciPy",
-        "Pandas",
-        "Git/GitHub",
-        "High-Performance Computing"
-      ]
+      "keywords": ["Python", "JAX", "NumPyro", "NumPy/SciPy", "Pandas", "Git/GitHub", "High-Performance Computing"]
     },
     {
       "name": "Statistical & Machine Learning Methods",
@@ -160,12 +147,7 @@
       "name": "Observational Experience",
       "level": "Advanced",
       "icon": "fa-solid fa-satellite-dish",
-      "keywords": [
-        "DECam (4 nights observing)",
-        "Keck/MOSFIRE (2 nights observing)",
-        "Photometry Reduction",
-        "Target Selection & Scheduling"
-      ]
+      "keywords": ["DECam (4 nights observing)", "Keck/MOSFIRE (2 nights observing)", "Photometry Reduction", "Target Selection & Scheduling"]
     }
   ],
   "interests": [
@@ -198,11 +180,7 @@
     {
       "name": "Dark Energy Science Collaboration",
       "summary": "Lead of SN Ia Modelling Topical Team, coordinating model development and validation for the Vera C. Rubin Observatory.",
-      "highlights": [
-        "Integrating BayeSN into LSST DESC pipelines",
-        "Organizing collaboration-wide meetings",
-        "Developing validation frameworks"
-      ],
+      "highlights": ["Integrating BayeSN into LSST DESC pipelines", "Organizing collaboration-wide meetings", "Developing validation frameworks"],
       "startDate": "2024",
       "endDate": "",
       "url": ""
@@ -210,11 +188,7 @@
     {
       "name": "SAINTS Collaboration",
       "summary": "Founding member of Supernovae in the Near-Infrared collaboration, compiling the largest-ever sample of NIR SN Ia observations.",
-      "highlights": [
-        "Founding member",
-        "NIR dust property constraints",
-        "International collaboration"
-      ],
+      "highlights": ["Founding member", "NIR dust property constraints", "International collaboration"],
       "startDate": "2023",
       "endDate": "",
       "url": ""
@@ -222,11 +196,7 @@
     {
       "name": "Keck Infrared Transient Survey",
       "summary": "Lead developer of photometry reduction pipeline for the survey, with 2 nights of observing time on Keck.",
-      "highlights": [
-        "Pipeline development",
-        "Active observer",
-        "NIR transient follow-up"
-      ],
+      "highlights": ["Pipeline development", "Active observer", "NIR transient follow-up"],
       "startDate": "2023",
       "endDate": "",
       "url": ""

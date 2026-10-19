@@ -16,14 +16,23 @@
   </div>
 
   <div class="cv-about-actions">
-    <button class="btn btn-primary btn-sm cv-pdf-button" data-pdf-url="{{ '/assets/pdf/KavliCV2025_Update.pdf' | relative_url }}" data-pdf-title="Matt Grayling - CV">
+    <button
+      class="btn btn-primary btn-sm cv-pdf-button"
+      data-pdf-url="{{ '/assets/pdf/KavliCV2025_Update.pdf' | relative_url }}"
+      data-pdf-title="Matt Grayling - CV"
+    >
       View full CV
     </button>
 
     {% if entry.socials %}
       <div class="cv-social-links">
         {% for social in entry.socials %}
-          <a href="{{ social.url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ social.icon | remove: 'fab fa-' | remove: 'fas fa-' | capitalize }}">
+          <a
+            href="{{ social.url }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="{{ social.icon | remove: 'fab fa-' | remove: 'fas fa-' | capitalize }}"
+          >
             <i class="{{ social.icon }}"></i>
           </a>
         {% endfor %}

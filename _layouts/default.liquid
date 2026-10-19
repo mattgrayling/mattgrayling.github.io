@@ -16,7 +16,10 @@
   </head>
 
   <!-- Body -->
-  <body data-page="{{ page.permalink | default: page.url }}" class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+  <body
+    data-page="{{ page.permalink | default: page.url }}"
+    class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}"
+  >
     <!-- Star Field Background -->
     <div id="star-background" aria-hidden="true"></div>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -55,7 +58,14 @@
     {% include footer.liquid %}
 
     <!-- PDF Viewer Modal -->
-    <div class="modal fade" id="pdf-modal" tabindex="-1" aria-labelledby="pdf-modal-label" aria-hidden="true" data-viewer-url="{{ '/assets/pdfjs/web/viewer.html' | relative_url }}">
+    <div
+      class="modal fade"
+      id="pdf-modal"
+      tabindex="-1"
+      aria-labelledby="pdf-modal-label"
+      aria-hidden="true"
+      data-viewer-url="{{ '/assets/pdfjs/web/viewer.html' | relative_url }}"
+    >
       <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
           <div class="modal-header">

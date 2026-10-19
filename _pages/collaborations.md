@@ -32,7 +32,7 @@ hide_title: true
         <h4 class="card-title"><a href="#">SAINTS</a></h4>
         <p class="text-muted small">Founding Member</p>
         <p>The SAINTS collaboration is working to systematically compile all near-infrared observations of type Ia supernovae,
-           investigating their potential for improved distance estimation and leveraging the 
+           investigating their potential for improved distance estimation and leveraging the
            additional information provided by NIR data to better understand these events.</p>
       </div>
     </div>
@@ -42,7 +42,7 @@ hide_title: true
       <div class="card h-100 p-3">
         <h4 class="card-title"><a href="https://yse.ucsc.edu/" target="_blank" rel="noopener noreferrer">Young Supernova Experiment</a></h4>
         <p class="text-muted small">Active Observer</p>
-        <p>Member of YSE, a transient survey on the Pan-STARRS telescopes. I have led observing nights using DECAM to 
+        <p>Member of YSE, a transient survey on the Pan-STARRS telescopes. I have led observing nights using DECAM to
         follow up YSE targets and chaired or participated in several junior review panels for YSE papers.</p>
       </div>
     </div>
@@ -55,6 +55,7 @@ hide_title: true
         <p>Interdisciplinary collaboration at the intersection of astronomy and machine learning, creating standardised datasets for foundation models.</p>
       </div>
     </div>
+
   </div>
 
   <!-- Related Content -->

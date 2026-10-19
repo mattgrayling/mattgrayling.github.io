@@ -44,6 +44,7 @@ latest_posts:
         <p>As co-convener of the Time-Domain Working Group in the <a href="/collaborations/">Dark Energy Science Collaboration (DESC)</a>, I am coordinating preparation for the first SN cosmology analyses with the Legacy Survey of Space and Time (LSST) at the Vera C. Rubin Observatory.</p>
       </div>
     </div>
+
   </div>
 
   <!-- Research Interests -->
@@ -60,7 +61,6 @@ latest_posts:
       </div>
     </div>
   </div>
-
 
   <!-- Broader Work -->
   <div class="card mt-3 p-3">

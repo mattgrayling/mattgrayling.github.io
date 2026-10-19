@@ -1511,7 +1511,8 @@ figure.cover {
     align-items: center;
 
     // Icon styling
-    .fas, .fa {
+    .fas,
+    .fa {
       color: var(--global-theme-color);
       font-size: 1.05rem;
       margin-right: 0.75rem;
@@ -1700,7 +1701,7 @@ figure.cover {
   padding-left: 1.25rem;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 1.25rem;
@@ -1713,7 +1714,8 @@ figure.cover {
 
 // Thematic colors for link icons
 .publications .links {
-  .ai-ads, .ai-arxiv {
+  .ai-ads,
+  .ai-arxiv {
     color: var(--global-theme-color);
   }
   .fa-file-pdf {

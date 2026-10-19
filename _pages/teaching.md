@@ -46,6 +46,7 @@ hide_title: true
         </blockquote>
       </div>
     </div>
+
   </div>
 
   <!-- Teaching Experience -->
@@ -138,6 +139,7 @@ hide_title: true
         </div>
       </div>
     </div>
+
   </div>
 
   <!-- Related Content -->

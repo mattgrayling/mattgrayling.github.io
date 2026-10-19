@@ -59,6 +59,7 @@ category: current
       <p>We apply BayeSN to simulations based on an alternative SED model, SALT, which incorporate dust and intrinsic
       differences, verifying that BayeSN is indeed able to distinguish these two effects separately</p>
     </div>
+
   </div>
 </div>
 

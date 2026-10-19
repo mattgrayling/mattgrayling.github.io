@@ -37,7 +37,7 @@
       description:
         - Centre for Doctoral Training in Data-intensive Science
         - Supervisor Prof. Mark Sullivan
-        - 'Thesis: Core-collapse Supernovae in the Dark Energy Survey'
+        - "Thesis: Core-collapse Supernovae in the Dark Energy Survey"
         - Awarded March 2023
 
     - title: MSci Physics
@@ -46,14 +46,14 @@
       description:
         - Graduated with First Class Honours
         - Supervisor Dr. Dave Clements
-        - 'Dissertation: Effect of Environment on Galaxy Properties in Intermediate Redshift Clusters'
+        - "Dissertation: Effect of Environment on Galaxy Properties in Intermediate Redshift Clusters"
 
 - title: Skills
   type: nested_list
   contents:
     - title: Statistical Inference & Machine Learning
       items:
-        - 'Tools: JAX, NumPyro, Keras, TensorFlow'
+        - "Tools: JAX, NumPyro, Keras, TensorFlow"
         - Developing cutting-edge, GPU-accelerated hierarchical Bayesian models for fast inference across thousands of parameters
         - Experienced with developing neural networks
 
@@ -97,6 +97,5 @@
 - title: Grants
   type: list
   contents:
-    - '<strong>£11,000 award from Kavli Institute for Cosmology, Cambridge for Cosmic Lighthouses conference</strong><br>Largest dedicated type Ia supernova conference globally since 2019, held in Cambridge in July 2025, focusing on bringing together researchers from astrophysics and cosmology with ~80 attendees'
-    - '<strong>Department of Energy funding to support SN Ia Modelling Workshop</strong><br>Financial support for attendees to DESC SN Ia Modelling Workshop in Stockholm, July 2024'
-
+    - "<strong>£11,000 award from Kavli Institute for Cosmology, Cambridge for Cosmic Lighthouses conference</strong><br>Largest dedicated type Ia supernova conference globally since 2019, held in Cambridge in July 2025, focusing on bringing together researchers from astrophysics and cosmology with ~80 attendees"
+    - "<strong>Department of Energy funding to support SN Ia Modelling Workshop</strong><br>Financial support for attendees to DESC SN Ia Modelling Workshop in Stockholm, July 2024"

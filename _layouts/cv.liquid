@@ -1,13 +1,15 @@
 ---
 layout: default
 ---
-<header class="post-header"><h1 class="post-title">{{ page.title | escape }}</h1></header>
+<header class="post-header">
+  <h1 class="post-title">{{ page.title | escape }}</h1>
+</header>
 {% unless site.data.cv_json %}
   <div class="post">
     <article>
       {% if page.toc_sidebar %}
         <div class="row">
-          <!-- Sidebar Navigation-->
+          <!-- Sidebar Navigation -->
           <div class="col-md-3">
             <nav id="cv-sidebar" class="cv-sidebar sticky-top">
               <ul class="nav flex-column">
@@ -48,7 +50,8 @@ layout: default
                       {% else %}
                         {{ entry.contents }}
                       {% endif %}
-                    </div>                  </div>
+                    </div>
+                  </div>
                 </div>
               {% endfor %}
             </div>
